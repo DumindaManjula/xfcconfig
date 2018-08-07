@@ -1,0 +1,27 @@
+server:
+  port: 8605
+
+spring:
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: agc_cdm
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
+
+logging:
+  file: archisoft-mtx-biznature.log
+#  file: /home/tharanga/workspace/archisoft/ManageTradeX/log/archisoft-common-user.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: "%d {yyyy-MM-dd HH:mm:ss} - %msg%n"
