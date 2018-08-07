@@ -1,0 +1,37 @@
+server:
+  port: 8666
+
+spring:
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: agc_mail
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: archisoft.noreply@gmail.com
+    password: Pa$$w0rd@123
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+management:
+  security:
+    enable: false
+
+logging:
+  file: archisoft-common-email.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: "%d {yyyy-MM-dd HH:mm:ss} - %msg%n"
