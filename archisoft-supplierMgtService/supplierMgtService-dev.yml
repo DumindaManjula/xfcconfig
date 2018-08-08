@@ -31,7 +31,8 @@ service:
     createUserGroupPath: api/usergroups
   supplierService:
     serviceId:  supplierservice
-    createSupplierPath: api/supplier
+    createSupplierPath: api/suppliers
+    deleteSupplierPath: api/suppliers
 
 archisoft:
   constant:
