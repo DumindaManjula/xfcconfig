@@ -37,4 +37,4 @@ service:
 
 archisoft:
   constant:
-    forgotPasswordActivationLink: http://localhost:8080/activate/supplier?key=
+    forgotPasswordActivationLink: http://localhost:8080/#/login/change-password?key=
