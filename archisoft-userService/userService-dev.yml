@@ -34,3 +34,7 @@ service:
     gmailApiPath: api/gmail
   activationkey:
     validInSecond: 300
+
+archisoft:
+  constant:
+    forgotPasswordActivationLink: http://192.168.0.207:3000/#/login/change-password?key=

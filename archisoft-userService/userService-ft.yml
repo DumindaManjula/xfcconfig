@@ -34,3 +34,7 @@ service:
     gmailApiPath: api/gmail
   activationkey:
     validInSecond: 300
+
+archisoft:
+  constant:
+    forgotPasswordActivationLink: http://localhost:8080/activate/supplier?key=
