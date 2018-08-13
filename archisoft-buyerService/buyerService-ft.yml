@@ -1,0 +1,33 @@
+server:
+  port: 8630
+
+spring:
+  profiles:
+    active: ft
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.209:27017}
+      database: mtx_buyer
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
+
+logging:
+  file: archisoft-mtx-buyer.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: "%d {yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+service:
+  emailService:
+    serviceId:  emailservice
+    gmailApiPath: api/gmail
+  userService:
+    serviceId: userservice
