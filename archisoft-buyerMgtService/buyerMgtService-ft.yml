@@ -33,8 +33,8 @@ service:
     deleteUserGroupPath: api/usergroups/
   buyerService:
     serviceId:  buyerservice
-    createbuyerPath: api/buyers
-    deletebuyerPath: api/buyers/
+    createbuyerPath: api/mtx/buyers
+    deletebuyerPath: api/mtx/buyers/
     getbuyerPath: api/mtx/buyers/
 
 archisoft:
