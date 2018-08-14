@@ -35,7 +35,7 @@ service:
     serviceId:  supplierservice
     createSupplierPath: api/suppliers
     deleteSupplierPath: api/suppliers/
-    getSupplierPath: api/mtx/suppliers/
+    getbuyerPath: api/mtx/buyers/
 
 archisoft:
   constant:
