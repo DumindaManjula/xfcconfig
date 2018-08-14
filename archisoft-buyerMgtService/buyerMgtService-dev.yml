@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    active: ft
+    active: dev
   cloud:
     discovery:
       enabled: false
@@ -16,7 +16,7 @@ management:
     enable: false
 
 logging:
-  file: archisoft-mtx-supplierManagement.log
+  file: archisoft-mtx-buyerManagement.log
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
     console: "%d {yyyy-MM-dd HH:mm:ss} - %msg%n"
@@ -31,12 +31,12 @@ service:
     deleteUserPath: api/users/
     createUserGroupPath: api/usergroups
     deleteUserGroupPath: api/usergroups/
-  supplierService:
-    serviceId:  supplierservice
-    createSupplierPath: api/suppliers
-    deleteSupplierPath: api/suppliers/
-    getSupplierPath: api/mtx/suppliers/
+  buyerService:
+    serviceId:  buyerservice
+    createbuyerPath: api/mtx/buyers
+    deletebuyerPath: api/mtx/buyers/
+    getbuyerPath: api/mtx/buyers/
 
 archisoft:
   constant:
-    passwordActivationLink: http://localhost:8080/activate/supplier?key=
+    passwordActivationLink: http://localhost:8080/activate/buyer?key=
