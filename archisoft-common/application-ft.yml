@@ -1,6 +1,13 @@
 spring:
   profiles:
     active: ft
+  zipkin:
+    sender:
+      type: web
+    baseUrl:  http://192.168.0.209:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
 
 eureka:
   instance:
