@@ -37,6 +37,7 @@ service:
     getUsersPath: /api/users/
     getCompanyByUserIdAndCompanyIdAndType:  /api/company/{companyId}/users/{userId}?companyType={companyType}
     getUserGroupById:  /api/usergroups/
+    getForgotPasswordActivationPath:  /api/user/password?email={emailAddress}
   activationkey:
     validInSecond: 300
 
