@@ -32,6 +32,9 @@ service:
   emailservice:
     serviceId:  emailService
     gmailApiPath: api/gmail
+  userService:
+    serviceId:  userservice
+    getUsersPath: /api/users/
   activationkey:
     validInSecond: 300
 
