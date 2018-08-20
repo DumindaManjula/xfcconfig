@@ -36,7 +36,7 @@ service:
     serviceId:  userservice
     getUsersPath: /api/users/
     getCompanyByUserIdAndCompanyIdAndType:  /api/company/{companyId}/users/{userId}?companyType={companyType}
-    getUserGroupById:  /api/group/
+    getUserGroupById:  /api/usergroups/
   activationkey:
     validInSecond: 300
 
