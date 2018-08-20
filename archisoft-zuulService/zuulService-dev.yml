@@ -35,7 +35,7 @@ zuul:
 mtx:
   services:
     nonsecure:
-      /userservice/user/authenticate,/usermgtservice/user/authenticate,/userservice/user/password,/userservice/user/resetpwd,/userservice/user/activate,/supportservice/api/countries,/supportservice/api/biznature
+      /userservice/user/authenticate,/usermgtservice/user/authenticate,/userservice/user/password,/usermgtservice/user/password,/userservice/user/resetpwd,/userservice/user/activate,/supportservice/api/countries,/supportservice/api/biznature
 
 logging:
   file: archisoft-common-zuul.log
