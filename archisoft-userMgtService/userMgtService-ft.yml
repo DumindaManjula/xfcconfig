@@ -39,6 +39,7 @@ service:
     getUserGroupById:  /api/usergroups/
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
     getUsersByEmailPath: /api/users?email=
+    updateUserPath: /api/users/
   activationkey:
     validInSecond: 300
 
