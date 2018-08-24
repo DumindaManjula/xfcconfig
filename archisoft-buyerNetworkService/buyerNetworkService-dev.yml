@@ -1,5 +1,5 @@
 server:
-  port: 8630
+  port: 8631
 
 spring:
   profiles:
@@ -7,7 +7,7 @@ spring:
   data:
     mongodb:
       uri: ${DB_URL:mongodb://192.168.0.207:27017}
-      database: mtx_buyer
+      database: mtx_network
   cloud:
     discovery:
       enabled: false
