@@ -35,6 +35,7 @@ service:
   userService:
     serviceId:  userservice
     getUsersPath: /api/users/
+    getUsersByLoginPath: /api/users?login=
     getCompanyByUserIdAndCompanyIdAndType:  /api/company/{companyId}/users/{userId}?companyType={companyType}
     getUserGroupById:  /api/usergroups/
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
