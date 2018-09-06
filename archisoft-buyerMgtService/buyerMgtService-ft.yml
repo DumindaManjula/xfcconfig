@@ -39,8 +39,8 @@ service:
     updateBuyerStep2Path: /api/mtx/buyers/{id}/step2
     updateBuyerInvoiceRulePath: /api/mtx/buyers/{id}/invoicerules
     updateBuyerRelationshipConfigPath: /api/mtx/buyers/{id}/relationship
-    updateBuyerShippingInfoPath: /api/mtx/buyers/{id}/shippping
-    updateBuyerChangeShippingInfoPath: /api/mtx/buyers/{id}/shipping/{shippingId}
+    updateBuyerShippingInfoPath: /api/mtx/buyers/{id}/shipto
+    updateBuyerChangeShippingInfoPath: /api/mtx/buyers/{id}/shipto/{shippingId}
     updateBuyerTaxInfoPath: /api/mtx/buyers/{id}/tax
     updateBuyerChnageTaxInfoPath: /api/mtx/buyers/{id}/tax/{taxId}
     updateBuyerUomInfoPath: /api/mtx/buyers/{id}/uom
