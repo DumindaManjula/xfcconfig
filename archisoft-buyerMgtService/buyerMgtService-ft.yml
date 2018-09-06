@@ -36,6 +36,14 @@ service:
     createbuyerPath: api/mtx/buyers
     deletebuyerPath: api/mtx/buyers/
     getbuyerPath: api/mtx/buyers/
+    updateBuyerStep2Path: /api/mtx/buyers/{id}/step2
+    updateBuyerInvoiceRulePath: /api/mtx/buyers/{id}/ir
+    updateBuyerRelationshipConfigPath: /api/mtx/buyers/{id}/sr
+    updateBuyerShippingInfoPath: /api/mtx/buyers/{id}/sp
+    updateBuyerTaxInfoPath: /api/mtx/buyers/{id}/tx
+    updateBuyerUomInfoPath: /api/mtx/buyers/{id}/uom
+    updateBuyerPreferenceInfoPath: /api/mtx/buyers/{id}/pf
+    updateBuyerCurrencyInfoPath: /api/mtx/buyers/{id}/cur
 
 archisoft:
   constant:
