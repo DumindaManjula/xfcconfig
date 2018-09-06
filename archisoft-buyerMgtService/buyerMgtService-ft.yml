@@ -44,7 +44,6 @@ service:
     updateBuyerUomInfoPath: /api/mtx/buyers/{id}/uom
     updateBuyerPreferenceInfoPath: /api/mtx/buyers/{id}/pf
     updateBuyerCurrencyInfoPath: /api/mtx/buyers/{id}/cur
-    adminActivationEmail: Dear customer_name,\n\nWelcome to 'Manage Trade X'.\n\nPlease use below link to activate admin user.\n\nLink : access_link\n\nUser name: login_name \n\nIf you need further details, please contact us.\n\nTelephone: phone should come here\nFax:       Fax should come here\nEmail:     email should come here\n\nThank you,\nArchisoft Global - MTX\n
 
 archisoft:
   constant:

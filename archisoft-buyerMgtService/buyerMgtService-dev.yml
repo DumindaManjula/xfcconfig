@@ -44,7 +44,6 @@ service:
     updateBuyerUomInfoPath: /api/mtx/buyers/{id}/uom
     updateBuyerPreferenceInfoPath: /api/mtx/buyers/{id}/pf
     updateBuyerCurrencyInfoPath: /api/mtx/buyers/{id}/cur
-    c
 
 archisoft:
   constant:
