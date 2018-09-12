@@ -1,0 +1,24 @@
+server:
+  port: 8635
+
+spring:
+  profiles:
+    active: ft
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
+
+service:
+  networkService:
+    serviceId:  networkService
+#    createbuyerPath: api/mtx/buyers
+#    deletebuyerPath: api/mtx/buyers/
+#    getbuyerPath: api/mtx/buyers/
+
