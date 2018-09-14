@@ -19,7 +19,6 @@ management:
 service:
   networkService:
     serviceId:  networkService
-<<<<<<< HEAD
 
     getSupplierListPath: /api/mtx/network/buyer/
     getSuppliersAdvanceSearchPath: /api/mtx/network/buyer/advance
@@ -28,9 +27,3 @@ service:
 
     getBuyerListPath: /api/mtx/network/supplier/
     getBuyersAdvanceSearchPath: /api/mtx/network/supplier/advance
-
-=======
-    getsupplierListPath: /api/mtx/network/buyer/
-#    deletebuyerPath: api/mtx/buyers/
-#    getbuyerPath: api/mtx/buyers/
->>>>>>> development
