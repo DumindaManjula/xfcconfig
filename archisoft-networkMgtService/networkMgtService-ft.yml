@@ -18,7 +18,12 @@ management:
 service:
   networkService:
     serviceId:  networkService
-#    createbuyerPath: api/mtx/buyers
-#    deletebuyerPath: api/mtx/buyers/
-#    getbuyerPath: api/mtx/buyers/
+
+    getSupplierListPath: /api/mtx/network/buyer/
+    getSuppliersAdvanceSearchPath: /api/mtx/network/buyer/advance
+    updateSupplierStatusPath: /api/mtx/network/buyer/{buyerId}/suppliers/{supplierId}
+    addSuppliersToBuyerNetwork: /api/mtx/network/buyer/{buyerId}/suppliers
+
+    getBuyerListPath: /api/mtx/network/supplier/
+    getBuyersAdvanceSearchPath: /api/mtx/network/supplier/advance
 
