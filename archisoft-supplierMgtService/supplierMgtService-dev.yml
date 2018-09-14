@@ -29,13 +29,25 @@ service:
     serviceId:  userservice
     createUserPath: api/users
     deleteUserPath: api/users/
-    createUserGroupPath: api/usergroups
+    createUserGroupPath: /api/usergroups
     deleteUserGroupPath: api/usergroups/
   supplierService:
     serviceId:  supplierservice
-    createSupplierPath: api/mtx/suppliers
+    createSupplierPath: /api/mtx/suppliers
     deleteSupplierPath: api/mtx/suppliers/
     getSupplierPath: api/mtx/suppliers/
+    updateSupplierStep2Path: /api/mtx/suppliers/{id}/step2
+    updateSupplierContactPath: /api/mtx/suppliers/{id}/contacts
+    editSupplierContactPath: /api/mtx/suppliers/{id}/contacts/{contactId}
+    supplierRemittancePath: /api/mtx/suppliers/{id}/remittance
+    supplierBankPath: /api/mtx/suppliers/{id}/banks
+    supplierShipInfoPath: /api/mtx/suppliers/{id}/shipfrom
+    editSupplierShipInfoPath: /api/mtx/suppliers/{id}/shipfrom/{shipId}
+    supplierTaxInfoPath: /api/mtx/suppliers/{id}/tax
+    editSupplierTaxInfoPath: /api/mtx/suppliers/{id}/tax/{taxId}
+    supplierUmoInfoPath: /api/mtx/suppliers/{id}/uoms
+    supplierCurrencyPath: /api/mtx/suppliers/{id}/currencies
+    supplierPreferencePath: /api/mtx/suppliers/{id}/preference
 
 archisoft:
   constant:
