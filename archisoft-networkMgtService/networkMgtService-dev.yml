@@ -29,5 +29,3 @@ service:
     getBuyersAdvanceSearchPath: /api/mtx/network/supplier/advance
 
     getsupplierListPath: /api/mtx/network/buyer/
-#    deletebuyerPath: api/mtx/buyers/
-#    getbuyerPath: api/mtx/buyers/
