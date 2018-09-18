@@ -1,11 +1,11 @@
 server:
-  port: 8601
+  port: 8670
 
 spring:
   data:
     mongodb:
       uri: ${DB_URL:mongodb://192.168.0.209:27017}
-      database: agc_uaa
+      database: agc_ntf
   profiles:
     active: ft
   cloud:
@@ -21,14 +21,3 @@ security:
 management:
   security:
     enable: false
-
-service:
-  emailservice:
-    serviceId:  emailService
-    gmailApiPath: api/gmail
-  activationkey:
-    validInSecond: 300
-
-archisoft:
-  constant:
-    forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
