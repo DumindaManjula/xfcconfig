@@ -21,9 +21,10 @@ service:
     getSuppliersAdvanceSearchPath: /api/mtx/network/buyer/{buyerId}/advance?
     updateSupplierStatusPath: /api/mtx/network/buyer/{buyerId}/suppliers/{supplierId}/status
     supplierListToBuyerNetwork: /api/mtx/network/buyer/{buyerId}/suppliers
-    getBuyerListPath: /api/mtx/network/supplier/
-    getBuyersAdvanceSearchPath: /api/mtx/network/supplier/advance
+    getBuyerListPath: /api/mtx/network/supplier/{supplierId}/buyers
+    getBuyersAdvanceSearchPath: /api/mtx/network/supplier/{supplierId}/advance?
     getsupplierListPath: /api/mtx/network/buyer/
+
 
 
 
