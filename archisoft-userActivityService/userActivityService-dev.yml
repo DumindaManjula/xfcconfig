@@ -1,0 +1,23 @@
+server:
+  port: 8662
+
+spring:
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: agc_log
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+security:
+  ignored=/**
+
+management:
+  security:
+    enable: false
