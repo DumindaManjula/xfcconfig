@@ -36,9 +36,3 @@ mtx:
   services:
     nonsecure:
       /usermgtservice/user/authenticate,/usermgtservice/user/password,/usermgtservice/user/resetpwd,/usermgtservice/user/activate,/supportservice/api/countries,/supportservice/api/biznature
-
-logging:
-  file: archisoft-common-zuul.log
-  pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
-    console: "%d {yyyy-MM-dd HH:mm:ss} - %msg%n"

@@ -18,10 +18,3 @@ spring:
 management:
   security:
     enable: false
-
-logging:
-  file: archisoft-mtx-biznature.log
-#  file: /home/tharanga/workspace/archisoft/ManageTradeX/log/archisoft-common-user.log
-  pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
-    console: "%d {yyyy-MM-dd HH:mm:ss} - %msg%n"
