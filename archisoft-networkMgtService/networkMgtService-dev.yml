@@ -18,8 +18,8 @@ management:
 service:
   networkService:
     serviceId:  networkService
-    getSuppliersAdvanceSearchPath: /api/mtx/network/buyer/advance
-    updateSupplierStatusPath: /api/mtx/network/buyer/{buyerId}/suppliers/{supplierId}
+    getSuppliersAdvanceSearchPath: /api/mtx/network/buyer/{buyerId}/advance?
+    updateSupplierStatusPath: /api/mtx/network/buyer/{buyerId}/suppliers/{supplierId}/status
     supplierListToBuyerNetwork: /api/mtx/network/buyer/{buyerId}/suppliers
     getBuyerListPath: /api/mtx/network/supplier/
     getBuyersAdvanceSearchPath: /api/mtx/network/supplier/advance
