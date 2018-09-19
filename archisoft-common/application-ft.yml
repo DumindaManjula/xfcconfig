@@ -4,7 +4,7 @@ spring:
   zipkin:
     sender:
       type: web
-    baseUrl:  http://192.168.0.209:9411
+    baseUrl:  http://192.168.0.207:9411
   sleuth:
     sampler:
       percentage: 1.0
