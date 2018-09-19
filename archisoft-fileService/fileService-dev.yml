@@ -1,0 +1,19 @@
+server:
+  port: 8700
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+security:
+  ignored=/**
+
+management:
+  security:
+    enable: false
