@@ -17,3 +17,10 @@ security:
 management:
   security:
     enable: false
+
+archisoft:
+  configuration:
+    ftpHost:  192.168.0.64
+    ftpPort:  21
+    ftpUser:  ftpuser
+    ftpPassword:  ftpuser
