@@ -42,6 +42,7 @@ service:
     updateBuyerCurrencyInfoPath: /api/mtx/buyers/{id}/currencies
     updateBuyerStatusPath: /api/mtx/buyers/{id}/status
     updateAndGetBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents
+    deleteBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents?docName={docName}
 
 archisoft:
   constant:
