@@ -41,6 +41,9 @@ service:
     updateBuyerPreferenceInfoPath: /api/mtx/buyers/{id}/preference
     updateBuyerCurrencyInfoPath: /api/mtx/buyers/{id}/currencies
     updateBuyerStatusPath: /api/mtx/buyers/{id}/status
+    updateBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents
+    getBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents?type={type}
+    deleteBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents?docName={docName}
 
 archisoft:
   constant:
