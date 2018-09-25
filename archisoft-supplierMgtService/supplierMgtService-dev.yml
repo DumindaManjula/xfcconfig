@@ -42,6 +42,9 @@ service:
     supplierUmoInfoPath: /api/mtx/suppliers/{id}/uoms
     supplierCurrencyPath: /api/mtx/suppliers/{id}/currencies
     supplierPreferencePath: /api/mtx/suppliers/{id}/preference
+    updateSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents
+    getSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?type={type}
+    deleteSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?docName={docName}
 
 archisoft:
   constant:
