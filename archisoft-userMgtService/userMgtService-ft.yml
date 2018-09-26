@@ -36,6 +36,7 @@ service:
     getUsersByEmailPath: /api/users?email={emailAddress}
     updateUserPath: /api/users/
     getUsersByActivationCodePath: /api/users?activationCode={activationCode}
+    getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
   buyerService:
     serviceId:  buyerService
     updateStatus: /api/mtx/buyers/{buyerId}/status
