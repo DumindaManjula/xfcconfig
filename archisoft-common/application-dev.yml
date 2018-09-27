@@ -18,7 +18,7 @@ eureka:
 
 archisoft:
   configuration:
-    ftpHost:  192.168.0.64
-    ftpPort:  21
+    ftpHost:  192.168.0.207
+    ftpPort:  22
     ftpUser:  ftpuser
     ftpPassword:  ftpuser
