@@ -45,6 +45,7 @@ service:
     updateSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents
     getSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?type={type}
     deleteSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?docName={docName}
+    editSupplierStatus: /api/mtx/suppliers/{supplierId}/status
 
 archisoft:
   constant:
