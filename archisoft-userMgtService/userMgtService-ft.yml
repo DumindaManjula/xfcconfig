@@ -43,7 +43,7 @@ service:
     updateStatus: /api/mtx/buyers/{buyerId}/status
   supplierService:
     serviceId:  supplierService
-    updateStatus: /api/mtx/supplier/{supplierId}/status
+    updateStatus: /api/mtx/suppliers/{supplierId}/status
   activationkey:
     validInSecond: 300
 
