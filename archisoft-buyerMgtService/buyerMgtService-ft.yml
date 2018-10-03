@@ -27,9 +27,9 @@ service:
     deleteUserGroupPath: api/usergroups/
   buyerService:
     serviceId:  buyerservice
-    createbuyerPath: api/mtx/buyers
-    deletebuyerPath: api/mtx/buyers/
-    getbuyerPath: api/mtx/buyers/
+    createbuyerPath: /api/mtx/buyers
+    getbuyerPath: /api/mtx/buyers/{buyerId}
+    getAllBuyersPath: /api/mtx/buyers/
     updateBuyerStep2Path: /api/mtx/buyers/{id}/step2
     updateBuyerInvoiceRulePath: /api/mtx/buyers/{id}/invoicerules
     updateBuyerRelationshipConfigPath: /api/mtx/buyers/{id}/relationship
