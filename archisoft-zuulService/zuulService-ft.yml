@@ -35,4 +35,4 @@ zuul:
 mtx:
   services:
     nonsecure:
-      /usermgtservice/user/authenticate,/usermgtservice/user/password,/usermgtservice/user/resetpwd,/usermgtservice/user/activate,/supportservice/api/countries,/supportservice/api/biznature,/supportservice/api/uoms
+      /usermgtservice/user/authenticate,/usermgtservice/user/password,/usermgtservice/user/resetpwd,/usermgtservice/user/activate,/supportservice/api/countries,/supportservice/api/biznature,/supportservice/api/uoms,/suppliermgtservice/api/suppliers
