@@ -25,7 +25,7 @@ service:
     deleteUserPath: api/users/
     createUserGroupPath: /api/usergroups
     deleteUserGroupPath: api/usergroups/
-    getUserByemailPath: api/users?email=
+    getUserByemailPath: api/users?email={email}
   supplierService:
     serviceId:  supplierservice
     createSupplierPath: /api/mtx/suppliers
