@@ -44,6 +44,9 @@ service:
   supplierService:
     serviceId:  supplierService
     updateStatus: /api/mtx/suppliers/{supplierId}/status
+  activityService:
+    serviceId:  userActivityService
+    addActivityPath:  /api/mtx/activities
   activationkey:
     validInSecond: 300
 
