@@ -29,6 +29,7 @@ service:
     getUserCompany: api/company/{companyId}/users/{userId}?companyType={companyType}
     createUserCompany: /api/company
     getuserCompanyByUserId: /api/company
+    getDefaultCompanyUserIdAndType: /api/company?companyType={companyType}&userId={userId}
   supplierService:
     serviceId:  supplierservice
     createSupplierPath: /api/mtx/suppliers
