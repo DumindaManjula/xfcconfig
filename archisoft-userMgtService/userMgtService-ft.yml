@@ -39,6 +39,7 @@ service:
     getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
     updateUserLoginTime:  /api/users/{userId}
     addUserCompany: /api/company
+    deleteUserCompany: /api/company/{companyId}
   buyerService:
     serviceId:  buyerService
     updateStatus: /api/mtx/buyers/{buyerId}/status
