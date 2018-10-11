@@ -31,7 +31,7 @@ service:
   supplierService:
     serviceId:  supplierservice
     createSupplierPath: /api/mtx/suppliers
-    deleteSupplierPath: api/mtx/suppliers/
+    deleteSupplierPath: /api/mtx/suppliers/{supplierId}
     getSupplierPath: /api/mtx/suppliers/{supplierId}
     updateSupplierStep2Path: /api/mtx/suppliers/{id}/step2
     updateSupplierContactPath: /api/mtx/suppliers/{id}/contacts
