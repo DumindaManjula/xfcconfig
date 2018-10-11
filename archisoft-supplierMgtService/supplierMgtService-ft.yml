@@ -26,9 +26,7 @@ service:
     createUserGroupPath: /api/usergroups
     deleteUserGroupPath: api/usergroups/
     getUserByemailPath: api/users?email={email}
-    getUserCompany: api/company/{companyId}/users/{userId}?companyType={companyType}
     createUserCompany: /api/company
-    getuserCompanyByUserId: /api/company
     getDefaultCompanyUserIdAndType: /api/company?companyType={companyType}&userId={userId}
   supplierService:
     serviceId:  supplierservice
@@ -51,7 +49,3 @@ service:
     getSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?type={type}
     deleteSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?docName={docName}
     editSupplierStatus: /api/mtx/suppliers/{supplierId}/status
-
-archisoft:
-  constant:
-    passwordActivationLink: http://localhost:8080/activate/supplier?key=
