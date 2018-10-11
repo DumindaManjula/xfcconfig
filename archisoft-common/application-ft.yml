@@ -22,3 +22,5 @@ archisoft:
     ftpPort:  22
     ftpUser:  ftpuser
     ftpPassword:  ftpuser
+  constant:
+    passwordActivationLink: http://localhost:8080/activate/buyer?key=

@@ -47,7 +47,3 @@ service:
     updateBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents
     getBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents?type={type}
     deleteBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents?docName={docName}
-
-archisoft:
-  constant:
-    passwordActivationLink: http://localhost:8080/activate/buyer?key=
