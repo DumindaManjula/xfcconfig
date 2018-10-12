@@ -40,7 +40,7 @@ service:
     updateUserLoginTime:  /api/users/{userId}
     addUserCompany: /api/company
     deleteUserCompany: /api/company/{companyId}
-    usergroup: /api/usergroups{id}
+    usergroup: /api/usergroups/{id}
   buyerService:
     serviceId:  buyerService
     updateStatus: /api/mtx/buyers/{buyerId}/status
