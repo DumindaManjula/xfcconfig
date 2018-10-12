@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: ${DB_URL:mongodb://192.168.0.209:27017}
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
       database: agc_uaa
   profiles:
     active: ft
@@ -40,6 +40,7 @@ service:
     updateUserLoginTime:  /api/users/{userId}
     addUserCompany: /api/company
     deleteUserCompany: /api/company/{companyId}
+    usergroup: /api/usergroups{id}
   buyerService:
     serviceId:  buyerService
     updateStatus: /api/mtx/buyers/{buyerId}/status
