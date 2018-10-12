@@ -47,3 +47,9 @@ service:
     updateBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents
     getBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents?type={type}
     deleteBuyerDocumentPath: /api/mtx/buyers/{buyerId}/documents?docName={docName}
+archisoft:
+  configuration:
+    ftpHost:  192.168.0.207
+    ftpPort:  22
+    ftpUser:  ftpuser
+    ftpPassword:  ftpuser
