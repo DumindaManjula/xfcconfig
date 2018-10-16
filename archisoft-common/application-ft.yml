@@ -24,3 +24,4 @@ archisoft:
     ftpPassword:  ftpuser
   constant:
     passwordActivationLink: http://localhost:8080/activate/buyer?key=
+    userActivationLink: http://localhost:8080/#/user-activation?key=
