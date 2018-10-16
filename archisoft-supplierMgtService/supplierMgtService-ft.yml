@@ -49,3 +49,7 @@ service:
     getSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?type={type}
     deleteSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?docName={docName}
     editSupplierStatus: /api/mtx/suppliers/{supplierId}/status
+
+archisoft:
+  constant:
+    supplierActivationLink: http://localhost:8080/#/suppliers/user-activation?key=
