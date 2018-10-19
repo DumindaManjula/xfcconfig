@@ -14,7 +14,7 @@ eureka:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://192.168.0.207:8760/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://192.168.0.207:8761/eureka/}
 
 archisoft:
   configuration:
@@ -23,5 +23,5 @@ archisoft:
     ftpUser:  ftpuser
     ftpPassword:  ftpuser
   constant:
-    passwordActivationLink: http://localhost:8080/activate/buyer?key=
-    userActivationLink: http://localhost:8080/#/user-activation?key=
+    passwordActivationLink: http://192.168.0.207:3000/activate/buyer?key=
+    userActivationLink: http://192.168.0.207:3000/#/user-activation?key=
