@@ -49,3 +49,6 @@ service:
     getSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?type={type}
     deleteSupplierDocumentPath: /api/mtx/suppliers/{supplierId}/documents?docName={docName}
     editSupplierStatus: /api/mtx/suppliers/{supplierId}/status
+  commonSupportService:
+    serviceId: supportService
+    getModulePath: api/modules?type={type}&group={group}
