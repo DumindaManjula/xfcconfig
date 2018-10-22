@@ -51,4 +51,4 @@ service:
     editSupplierStatus: /api/mtx/suppliers/{supplierId}/status
   commonSupportService:
     serviceId: supportService
-    getModulePath: api/modules?type={type}&group={group}
+    getModulePath: api/modules?group={group}
