@@ -25,3 +25,8 @@ archisoft:
   constant:
     passwordActivationLink: http://192.168.0.207:3000/activate/buyer?key=
     userActivationLink: http://192.168.0.207:3000/#/user-activation?key=
+
+service:
+  commonService:
+    serviceId: supportservice
+    getCommonSupplierModules: /api/modules?group={group}
