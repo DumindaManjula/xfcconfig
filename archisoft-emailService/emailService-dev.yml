@@ -15,10 +15,10 @@ spring:
       auto-registration:
         enabled: true
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: archisoft.noreply@gmail.com
-    password: Pa$$w0rd@123
+    host: mail.archisoftglobal.com
+    port: 143
+    username: mtxsystem@archisoftglobal.com
+    password: mtxEmailP@ssw0rd
     properties:
       mail:
         smtp:
