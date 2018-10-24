@@ -23,10 +23,10 @@ spring:
       mail:
         smtp:
           ssl:
-            enable: false
-          auth: true
-          starttls:
-            enable: false
+            enable: true
+#          auth: true
+#          starttls:
+#            enable: false
 
 management:
   security:
