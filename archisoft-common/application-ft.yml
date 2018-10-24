@@ -15,9 +15,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_SERVER_URL:http://192.168.0.62:8761/eureka/}
-  instance:
-    leaseRenewalIntervalInSeconds: 5
-    preferIpAddress: true
+
 archisoft:
   configuration:
     ftpHost:  192.168.0.207
