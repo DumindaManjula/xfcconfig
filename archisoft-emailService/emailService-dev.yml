@@ -16,7 +16,7 @@ spring:
         enabled: true
   mail:
     host: mail.archisoftglobal.com
-    port: 143
+    port: 587
     username: mtxsystem@archisoftglobal.com
     password: mtxEmailP@ssw0rd
     properties:
