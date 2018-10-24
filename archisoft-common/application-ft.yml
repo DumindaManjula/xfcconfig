@@ -29,4 +29,4 @@ archisoft:
 service:
   commonService:
     serviceId: supportservice
-    getCommonSupplierModules: /api/modules?group={group}
+    getCommonCompanyModules: /api/modules?group={group}
