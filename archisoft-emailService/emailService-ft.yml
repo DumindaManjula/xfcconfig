@@ -15,17 +15,22 @@ spring:
       auto-registration:
         enabled: true
   mail:
-    host: smtp.gmail.com
+    host: mail.archisoftglobal.com
     port: 587
-    username: archisoft.noreply@gmail.com
-    password: Pa$$w0rd@123
+    username: mtxsystem@archisoftglobal.com
+    password: mtxEmailP@ssw0rd
     properties:
       mail:
         smtp:
           auth: true
           starttls:
-            enable: true
+            enable: false
 
 management:
   security:
     enable: false
+
+archisoft:
+  constant:
+    supportEmail: mtxsupport@archisoftglobal.com
+    systemEmail:  mtxsystem@archisoftglobal.com
