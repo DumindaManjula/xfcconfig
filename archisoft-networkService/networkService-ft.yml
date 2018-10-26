@@ -1,5 +1,10 @@
 server:
   port: 8660
+  ssl:
+      enabled: true
+      key-store: classpath:client.jks
+      key-store-password: 123456
+      key-alias: client
 
 spring:
   data:
@@ -15,9 +20,12 @@ spring:
       auto-registration:
         enabled: true
 
-security:
-  ignored=/**
+#security:
+#  ignored=/**
 
 management:
   security:
     enable: false
+
+security:
+  require-ssl: true
