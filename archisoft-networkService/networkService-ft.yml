@@ -22,10 +22,10 @@ spring:
 
 #security:
 #  ignored=/**
-
-management:
-  security:
-    enable: false
+#
+#management:
+#  security:
+#    enable: false
 
 security:
   require-ssl: true
