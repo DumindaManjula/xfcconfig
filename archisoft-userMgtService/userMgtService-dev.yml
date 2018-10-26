@@ -60,5 +60,6 @@ archisoft:
     adminTokenValidityInMilliseconds: 3600000
     userTokenValidityInMilliseconds:  1800000
     temporaryTokenValidityInMilliseconds: 600000
+    refreshTokenValidityInMilliseconds: 2400000
   constant:
     forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
