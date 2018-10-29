@@ -15,13 +15,13 @@ eureka:
     nonSecurePortEnabled: false
     securePortEnabled: true
     securePort: ${server.port}
-#    statusPageUrl: https://192.168.0.62:${server.port}/info
-#    healthCheckUrl: https://192.168.0.62:${server.port}/health
-#    homePageUrl: https://192.168.0.62:${server.port}
+    statusPageUrl: https://192.168.0.62:${server.port}/info
+    healthCheckUrl: https://192.168.0.62:${server.port}/health
+    homePageUrl: https://192.168.0.62:${server.port}
   client:
     securePortEnabled: true
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://192.168.0.62:8761/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:https://192.168.0.62:8761/eureka/}
 
 
 archisoft:
