@@ -1,16 +1,5 @@
 server:
   port: 8660
-  ssl:
-    enabled: true
-    key-store: classpath:client.jks
-    key-store-password: 123456
-    key-alias: client
-    key-store-type: JKS
-    ciphers:
-      TLS_RSA_WITH_AES_256_CBC_SHA, SSL_RSA_WITH_RC4_128_MD5, SSL_RSA_WITH_RC4_128_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, SSL_RSA_FIPS_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_FIPS_WITH_DES_CBC_SHA, SSL_RSA_WITH_DES_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-    protocol:
-      TLS
-
 
 spring:
   data:
@@ -18,7 +7,7 @@ spring:
       uri: ${DB_URL:mongodb://192.168.0.207:27017}
       database: mtx_network
   profiles:
-    active: ft
+    active: dev
   cloud:
     discovery:
       enabled: false
@@ -26,12 +15,9 @@ spring:
       auto-registration:
         enabled: true
 
-#security:
-#  ignored=/**
-#
-#management:
-#  security:
-#    enable: false
-
 security:
-  require-ssl: true
+  ignored=/**
+
+management:
+  security:
+    enable: false
