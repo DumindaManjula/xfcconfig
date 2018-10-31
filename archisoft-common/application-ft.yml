@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: ft
+    active: dev
   zipkin:
     sender:
       type: web
@@ -14,7 +14,7 @@ eureka:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://192.168.0.62:8761/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.62:8761/eureka/}
 
 archisoft:
   configuration:
