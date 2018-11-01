@@ -37,6 +37,7 @@ service:
     updateUserPath: /api/users/
     getUsersByActivationCodePath: /api/users?activationCode={activationCode}
     getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
+    getAllUserCompaniesByUserIdAndType: /api/companies?userId={userId}&companyType={companyType}
     updateUserLoginTime:  /api/users/{userId}
     addUserCompany: /api/company
     deleteUserCompany: /api/company/{companyId}
@@ -61,5 +62,6 @@ archisoft:
     userTokenValidityInMilliseconds:  1800000
     temporaryTokenValidityInMilliseconds: 600000
     refreshTokenValidityInMilliseconds: 2400000
+    header: Authorization
   constant:
     forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
