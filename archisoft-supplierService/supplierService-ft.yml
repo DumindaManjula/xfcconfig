@@ -25,3 +25,9 @@ service:
     gmailApiPath: api/gmail
   userService:
     serviceId: userservice
+
+info:
+  build:
+    artifact: @project.artifactId@
+    version: @project.version@
+
