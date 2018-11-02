@@ -26,8 +26,5 @@ service:
   userService:
     serviceId: userservice
 
-info:
-  build:
-    artifact: @project.artifactId@
-    version: @project.version@
+
 
