@@ -1,5 +1,5 @@
 server:
-  port: 8660
+  port: 0
 
 spring:
   data:
