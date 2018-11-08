@@ -1,5 +1,7 @@
 server:
-  portRange: 8000..9000
+  portrange:
+    - 8000
+    - 9000
   port: 8060
 
 spring:
