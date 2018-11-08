@@ -1,5 +1,6 @@
 server:
-  port: 40846
+  portRange: 9001..9099
+  port: 0
 
 spring:
   profiles:
