@@ -1,6 +1,6 @@
 server:
   portRange: 8600..8700
-  port: 0
+#  port: 0
 
 spring:
   profiles:
