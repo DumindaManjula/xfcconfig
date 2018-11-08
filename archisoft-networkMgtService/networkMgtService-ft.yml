@@ -1,5 +1,5 @@
 server:
-  portRange: 8080..8090
+  portRange: 9001..9099
   port: 0
 
 spring:
