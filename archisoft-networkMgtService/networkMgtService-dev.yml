@@ -1,6 +1,5 @@
 server:
   portRange: 8080..8090
-  port: 0
 
 spring:
   profiles:
