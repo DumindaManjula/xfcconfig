@@ -59,9 +59,9 @@ archisoft:
   jwtToken:
     secretKey:  my-secret-token-to-change-in-production
     adminTokenValidityInMilliseconds: 3600000
-    userTokenValidityInMilliseconds:  1800000
+    userTokenValidityInMilliseconds:  300000
     temporaryTokenValidityInMilliseconds: 600000
-    refreshTokenValidityInMilliseconds: 2400000
+    refreshTokenValidityInMilliseconds: 900000
     header: Authorization
   constant:
     forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
