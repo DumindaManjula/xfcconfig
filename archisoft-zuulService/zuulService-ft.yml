@@ -36,10 +36,3 @@ mtx:
   services:
     nonsecure:
       (/usermgtservice/user/+(authenticate|password|resetpwd|activate))|(/supportservice/api/+(countries|biznature|uoms))|(/suppliermgtservice/api/suppliers)|(/supportservice/api/countries/+[A-Z]{2}+/states)
-
-archisoft:
-  jwtToken:
-    keystorename: server.jks
-    keystorepassword: 123456
-    keypassword: 123456
-    keystorealias: jwtkey
