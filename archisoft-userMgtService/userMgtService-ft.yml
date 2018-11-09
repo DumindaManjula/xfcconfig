@@ -63,5 +63,8 @@ archisoft:
     temporaryTokenValidityInMilliseconds: 600000
     refreshTokenValidityInMilliseconds: 2400000
     header: Authorization
+    keystorename: server.jks
+    keystorepassword: 123456
+    keypassword: 123456
   constant:
     forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
