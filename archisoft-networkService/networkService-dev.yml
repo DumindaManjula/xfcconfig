@@ -1,5 +1,6 @@
 server:
-  port: 8660
+  portRange: 8600..8700
+  port: 0
 
 spring:
   data:
