@@ -64,4 +64,4 @@ archisoft:
     refreshTokenValidityInMilliseconds: 2400000
     header: Authorization
   constant:
-    forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
+    forgotPasswordActivationLink: http://192.168.0.209:8080/#/change-password?key=
