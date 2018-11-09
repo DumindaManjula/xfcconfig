@@ -66,6 +66,5 @@ archisoft:
     keystorename: server.jks
     keystorepassword: 123456
     keypassword: 123456
-    keystorealias: jwtkey
   constant:
     forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
