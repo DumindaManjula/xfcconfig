@@ -17,5 +17,9 @@ management:
 
 service:
   organizationService:
-    serviceId:  organizationservice
+    serviceId:  organizationService
     selfRegistrationPath: /api/mtx/organizations/self
+    deleteOrganizationPath: /api/mtx/organization/{orgId}
+  activityService:
+    serviceId:  userActivityService
+    addActivityPath:  /api/mtx/activities
