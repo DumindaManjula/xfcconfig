@@ -14,3 +14,8 @@ spring:
 management:
   security:
     enable: false
+
+service:
+  organizationService:
+    serviceId:  organizationservice
+    selfRegistrationPath: /api/mtx/organizations/self
