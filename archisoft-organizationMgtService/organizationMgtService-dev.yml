@@ -23,3 +23,5 @@ service:
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
+  oraganizationService:
+    updateOrgStep2Path: /api/mtx/buyers/{id}/step2
