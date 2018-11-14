@@ -1,0 +1,16 @@
+server:
+  port: 8650
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
