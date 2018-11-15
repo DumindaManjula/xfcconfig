@@ -25,7 +25,8 @@ management:
 service:
   emailservice:
     serviceId:  emailService
-    gmailApiPath: /api/email #ok
+    emailApiPath: /api/email #ok
+    gmailApiPath: /api/gmail
   userService:
     serviceId:  userservice
     getUsersPath: /api/users/
@@ -34,7 +35,7 @@ service:
     getUserGroupById:  /api/usergroups/{groupId}
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
     getUsersByEmailPath: /api/users?email={emailAddress} #ok
-    updateUserPath: /api/users/
+    updateUserPath: /api/users #ok
     getUsersByActivationCodePath: /api/users?activationCode={activationCode}
     getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
     getAllUserCompaniesByUserIdAndType: /api/companies?userId={userId}&companyType={companyType}
