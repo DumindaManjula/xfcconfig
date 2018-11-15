@@ -25,7 +25,7 @@ management:
 service:
   emailservice:
     serviceId:  emailService
-    gmailApiPath: api/gmail
+    gmailApiPath: /api/gmail
   userService:
     serviceId:  userservice
     getUsersPath: /api/users/
