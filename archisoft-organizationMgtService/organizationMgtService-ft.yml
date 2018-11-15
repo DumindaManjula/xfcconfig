@@ -20,6 +20,9 @@ service:
     serviceId:  organizationService
     selfRegistrationPath: /api/mtx/organizations/self
     deleteOrganizationPath: /api/mtx/organization/{orgId}
+    updateOrgStep2Path: /api/mtx/buyers/{id}/step2
+    addModuleToBuyer: /api/mtx/buyers/{buyerId}/modules
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
+
