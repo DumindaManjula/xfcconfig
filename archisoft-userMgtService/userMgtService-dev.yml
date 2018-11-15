@@ -25,15 +25,15 @@ management:
 service:
   emailservice:
     serviceId:  emailService
-    gmailApiPath: api/gmail
+    gmailApiPath: /api/email #ok
   userService:
     serviceId:  userservice
     getUsersPath: /api/users/
-    getUsersByLoginPath: /api/users?login={loginId}
-    getCompanyByUserIdAndCompanyId:  /api/company/{companyId}/users/{userId}
+    getUsersByLoginPath: /api/users?login={loginId} #ok
+    getCompanyByUserIdAndCompanyId:  /api/company/{companyId}/users/{userId} #ok
     getUserGroupById:  /api/usergroups/{groupId}
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
-    getUsersByEmailPath: /api/users?email={emailAddress}
+    getUsersByEmailPath: /api/users?email={emailAddress} #ok
     updateUserPath: /api/users/
     getUsersByActivationCodePath: /api/users?activationCode={activationCode}
     getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
