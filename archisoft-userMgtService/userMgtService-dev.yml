@@ -36,7 +36,7 @@ service:
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
     getUsersByEmailPath: /api/users?email={emailAddress} #ok
     updateUserPath: /api/users #ok
-    getUsersByActivationCodePath: /api/users?activationCode={activationCode}
+    getUsersByActivationCodePath: /api/users?activationCode={activationCode} #ok
     getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
     getAllUserCompaniesByUserIdAndType: /api/companies?userId={userId}&companyType={companyType}
     updateUserLoginTime:  /api/users/{userId}
@@ -66,3 +66,5 @@ archisoft:
     header: Authorization
   constant:
     forgotPasswordActivationLink: http://192.168.0.207:8080/#/change-password?key=
+  user:
+    userStatusBeforeActivate:  P

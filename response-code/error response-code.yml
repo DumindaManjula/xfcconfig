@@ -1,0 +1,6 @@
+E00001: userAccess.getUserByLogin(changePasswordRequestDTO.getUserName()) - Fail
+E00002: user not find by login name - Fail
+E00003: User not activated.
+E00004: User status not allow for activate user.
+E00005: User update issue.
+E00006: Password mismatch.
