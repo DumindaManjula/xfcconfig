@@ -27,6 +27,7 @@ service:
   userService:
     serviceId:  userservice
     createUserGroupPath:  /api/usergroups
+    userGroupPath:  /api/usergroups/{groupId}
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
