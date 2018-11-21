@@ -11,3 +11,9 @@ E00010: Cannot send emails
 E00011: Add user issue
 E00012: Add user issue - ServiceCallException
 E00013: Add user issue - Exception
+E00014: Get Organization detail by Id un-successful
+E00015: Cannot find the organization by given orgId
+E00016: Organization current status not allow for approve/reject
+E00017: Cannot find the organization contact details
+E00018: User group creation unsuccessful.
+E00019: User creation un-successful

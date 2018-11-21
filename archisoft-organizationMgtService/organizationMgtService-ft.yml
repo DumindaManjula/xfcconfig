@@ -24,3 +24,13 @@ service:
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
+  userService:
+    serviceId:  userservice
+    createUserGroupPath:  /api/usergroups
+  userMgtService:
+    serviceId:  usermgtservice
+    createUserPath:  /api/users
+
+archisoft:
+  organization:
+    beforeApproveRejectStatus: WA
