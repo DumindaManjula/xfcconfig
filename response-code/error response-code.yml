@@ -4,3 +4,10 @@ E00003: User not activated.
 E00004: User status not allow for activate user.
 E00005: User update issue.
 E00006: Password mismatch.
+E00007: Get user by activation code service fail.
+E00008: Cannot find user for the activation code.
+E00009: UserCompany creation issue.
+E00010: Cannot send emails
+E00011: Add user issue
+E00012: Add user issue - ServiceCallException
+E00013: Add user issue - Exception
