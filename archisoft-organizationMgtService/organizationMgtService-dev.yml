@@ -19,8 +19,8 @@ service:
   organizationService:
     serviceId:  organizationService
     selfRegistrationPath: /api/mtx/organizations/self
-    organizationPath: /api/mtx/organization/{orgId}
-    updateOrganizationDocumentPath: /api/mtx/organization/{orgId}/documents
+    organizationPath: /api/mtx/organizations/{orgId}
+    updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities

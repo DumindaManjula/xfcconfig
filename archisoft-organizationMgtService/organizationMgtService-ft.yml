@@ -19,7 +19,7 @@ service:
   organizationService:
     serviceId:  organizationService
     selfRegistrationPath: /api/mtx/organizations/self
-    organizationPath: /api/mtx/organization/{orgId}
+    organizationPath: /api/mtx/organizations/{orgId}
     updateOrganizationDocumentPath: /api/mtx/organization/{orgId}/documents
   activityService:
     serviceId:  userActivityService
