@@ -19,7 +19,7 @@ service:
   organizationService:
     serviceId:  organizationService
     selfRegistrationPath: /api/mtx/organizations/self
-    deleteOrganizationPath: /api/mtx/organization/{orgId}
+    organizationPath: /api/mtx/organization/{orgId}
     updateOrganizationDocumentPath: /api/mtx/organization/{orgId}/documents
   activityService:
     serviceId:  userActivityService
@@ -27,6 +27,7 @@ service:
   userService:
     serviceId:  userservice
     createUserGroupPath:  /api/usergroups
+    userGroupPath:  /api/usergroups/{groupId}
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
