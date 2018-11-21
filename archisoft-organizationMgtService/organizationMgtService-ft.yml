@@ -31,3 +31,6 @@ service:
     serviceId:  usermgtservice
     createUserPath:  /api/users
 
+archisoft:
+  organization:
+    beforeApproveRejectStatus: WA
