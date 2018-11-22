@@ -36,11 +36,11 @@ service:
     createUserPath:  /api/users
   emailservice:
     serviceId:  emailService
-    emailApiPath: /api/email #ok
+    emailApiPath: /api/email
 
 archisoft:
   organization:
     beforeApproveRejectStatus: WA
   email:
     subject:
-      rejectCompany: %s - company registration fail
+      rejectCompany: Company registration fail
