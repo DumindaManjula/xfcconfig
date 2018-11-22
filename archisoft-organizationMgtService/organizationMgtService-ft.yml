@@ -28,6 +28,7 @@ service:
     serviceId:  userservice
     createUserGroupPath:  /api/usergroups
     userGroupPath:  /api/usergroups/{groupId}
+    deleteUserCompany:  /api/users/{userId}?companyId={companyId}
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
