@@ -21,6 +21,26 @@ service:
     selfRegistrationPath: /api/mtx/organizations/self
     deleteOrganizationPath: /api/mtx/organizations/{orgId}
     updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
+    organizationPath: /api/mtx/organizations/{orgId}
+    changeOrganizationStatusPath: /api/mtx/organizations/{orgId}/status
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
+  userService:
+    serviceId:  userservice
+    createUserGroupPath:  /api/usergroups
+    userGroupPath:  /api/usergroups/{groupId}
+    deleteUserCompany:  /api/users/{userId}?companyId={companyId}
+  userMgtService:
+    serviceId:  usermgtservice
+    createUserPath:  /api/users
+  emailservice:
+    serviceId:  emailService
+    emailApiPath: /api/email #ok
+
+archisoft:
+  organization:
+    beforeApproveRejectStatus: WA
+  email:
+    subject:
+      rejectCompany: %s - company registration fail
