@@ -42,4 +42,4 @@ archisoft:
     beforeApproveRejectStatus: WA
   email:
     subject:
-      rejectCompany: %s - company registration fail
+      rejectCompany: Company registration fail
