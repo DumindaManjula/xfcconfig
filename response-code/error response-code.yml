@@ -19,3 +19,6 @@ E00018: User group creation unsuccessful.
 E00019: User creation un-successful
 E00020: User creation un-successful
 E00021: Organization status change unsuccessful
+E00022: Organization status change unsuccessful
+E00023: Organization status change unsuccessful - reject status
+E00024: Get user company by userid, companyid issue
