@@ -20,7 +20,7 @@ service:
     serviceId:  organizationService
     selfRegistrationPath: /api/mtx/organizations/self
     organizationPath: /api/mtx/organizations/{orgId}
-    updateOrganizationDocumentPath: /api/mtx/organization/{orgId}/documents
+    updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
     changeOrganizationStatusPath: /api/mtx/organizations/{orgId}/status
   activityService:
     serviceId:  userActivityService
