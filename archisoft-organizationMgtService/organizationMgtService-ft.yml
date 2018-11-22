@@ -39,7 +39,7 @@ service:
 
 archisoft:
   organization:
-    beforeApproveRejectStatus:
+    beforeApproveRejectStatus: WA
   email:
     subject:
       rejectCompany: %s - company registration fail
