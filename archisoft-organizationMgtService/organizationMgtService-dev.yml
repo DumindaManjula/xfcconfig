@@ -33,6 +33,9 @@ service:
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
+  emailservice:
+    serviceId:  emailService
+    emailApiPath: /api/email #ok
 
 archisoft:
   organization:
