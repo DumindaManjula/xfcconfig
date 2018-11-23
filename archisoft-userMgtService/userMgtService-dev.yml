@@ -44,6 +44,7 @@ service:
     deleteUserCompany: /api/company/{companyId}
     getusergroupById: /api/usergroups/{id}
     addUsergroup: api/usergroups
+    updateUserImage: /api/users/{userId}/image
   buyerService:
     serviceId:  buyerService
     updateStatus: /api/mtx/buyers/{buyerId}/status
