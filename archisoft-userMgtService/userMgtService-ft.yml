@@ -30,13 +30,13 @@ service:
   userService:
     serviceId:  userservice
     getUsersPath: /api/users/
-    getUsersByLoginPath: /api/users?login={loginId}
-    getCompanyByUserIdAndCompanyId:  /api/company/{companyId}/users/{userId}
+    getUsersByLoginPath: /api/users?login={loginId} #ok
+    getCompanyByUserIdAndCompanyId:  /api/company/{companyId}/users/{userId} #ok
     getUserGroupById:  /api/usergroups/{groupId}
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
-    getUsersByEmailPath: /api/users?email={emailAddress}
+    getUsersByEmailPath: /api/users?email={emailAddress} #ok
     updateUserPath: /api/users/
-    getUsersByActivationCodePath: /api/users?activationCode={activationCode}
+    getUsersByActivationCodePath: /api/users?activationCode={activationCode} #ok
     getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
     getAllUserCompaniesByUserIdAndType: /api/companies?userId={userId}&companyType={companyType}
     updateUserLoginTime:  /api/users/{userId}
@@ -44,6 +44,7 @@ service:
     deleteUserCompany: /api/company/{companyId}
     getusergroupById: /api/usergroups/{id}
     addUsergroup: api/usergroups
+    updateUserImage: api/users/ #need to edit
   buyerService:
     serviceId:  buyerService
     updateStatus: /api/mtx/buyers/{buyerId}/status
