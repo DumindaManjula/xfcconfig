@@ -23,8 +23,7 @@ service:
     updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
     organizationPath: /api/mtx/organizations/{orgId}
     changeOrganizationStatusPath: /api/mtx/organizations/{orgId}/status
-    organizationRegFinal : /api/mtx/organizations/{orgId}/final
-  activityService:
+   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
   userService:
