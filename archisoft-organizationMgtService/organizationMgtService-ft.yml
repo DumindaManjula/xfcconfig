@@ -38,6 +38,9 @@ service:
   emailservice:
     serviceId:  emailService
     emailApiPath: /api/email #ok
+  commonService:
+    serviceId: supportservice
+    menuByType : /api/menu/{id}?type={type}
 
 archisoft:
   organization:
