@@ -25,3 +25,4 @@ E00024: Get user company by userid, companyid issue
 E00025: Get all menu for company/admin fail, incorrect id
 E00026: Cannot find menu for this company. invalid companyID
 E00027: Get module by type method internal exception
+E00028: Cannot create user group. userManagement-addUserGroup
