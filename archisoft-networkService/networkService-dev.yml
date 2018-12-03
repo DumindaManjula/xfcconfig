@@ -1,4 +1,7 @@
-spring:
+server:
+  port: 8610
+
+pring:
   data:
     mongodb:
       uri: ${DB_URL:mongodb://192.168.0.207:27017}
