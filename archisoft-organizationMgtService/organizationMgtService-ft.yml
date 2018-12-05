@@ -32,6 +32,7 @@ service:
     createUserGroupPath:  /api/usergroups
     userGroupPath:  /api/usergroups/{groupId}
     deleteUserCompany:  /api/users/{userId}?companyId={companyId}
+    updateOrganizationImage: /api/users/{orgId}/image
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
