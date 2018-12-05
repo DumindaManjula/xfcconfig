@@ -25,6 +25,7 @@ service:
     changeOrganizationStatusPath: /api/mtx/organizations/{orgId}/status
     organizationRegFinal : /api/mtx/organizations/{orgId}/final
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
+    updateOrganizationImage: /api/organizations/{orgId}/image
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
@@ -33,7 +34,6 @@ service:
     createUserGroupPath:  /api/usergroups
     userGroupPath:  /api/usergroups/{groupId}
     deleteUserCompany:  /api/users/{userId}?companyId={companyId}
-    updateOrganizationImage: /api/users/{orgId}/image
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
