@@ -46,6 +46,7 @@ service:
     addUsergroup: api/usergroups
     updateUserImage: /api/users/{userId}/image
     getUsersById: /api/users/{userId}
+    editUsergroup: /api/usergroups/{groupId}
   buyerService:
     serviceId:  buyerService
     updateStatus: /api/mtx/buyers/{buyerId}/status
