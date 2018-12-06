@@ -26,7 +26,7 @@ service:
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
     getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
-   activityService:
+  activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
   userService:
