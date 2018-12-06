@@ -47,12 +47,9 @@ service:
     updateUserImage: /api/users/{userId}/image
     getUsersById: /api/users/{userId}
     editUsergroup: /api/usergroups/{groupId}
-  buyerService:
-    serviceId:  buyerService
-    updateStatus: /api/mtx/buyers/{buyerId}/status
-  supplierService:
-    serviceId:  supplierService
-    updateStatus: /api/mtx/suppliers/{supplierId}/status
+  organizationService:
+      serviceId:  organizationservice
+      getOrganizationModule: /api/mtx/organizations/{orgId}/menu
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
