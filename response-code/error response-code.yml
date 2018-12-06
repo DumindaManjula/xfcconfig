@@ -32,3 +32,4 @@ E00031: This company already used this invoice id.
 E00032: Invoice creation issue in InvoiceServiceImpl.createNewInvoice
 E00033: Module getting issue/or null. OrganizationManagement->OrganizationModuleManagementServiceImpl
 E00034: Get selected optional menu. OrganizationManagement->OrganizationModuleManagementServiceImpl
+E00035: Common support service execution issue for get modules by type.
