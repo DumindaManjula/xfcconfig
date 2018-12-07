@@ -23,10 +23,9 @@ service:
     updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
     organizationPath: /api/mtx/organizations/{orgId}
     changeOrganizationStatusPath: /api/mtx/organizations/{orgId}/status
-    organizationRegFinal : /api/mtx/organizations/{orgId}/final
+    updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
     getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
-    updateOrganizationImage: /api/mtx/organizations/{orgId}/image
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
@@ -42,7 +41,7 @@ service:
     createUserPath:  /api/users
   emailservice:
     serviceId:  emailService
-    emailApiPath: /api/email #ok
+    emailApiPath: /api/email
   commonService:
     serviceId: supportservice
     menuByType : /api/menu/{id}?type={type}
