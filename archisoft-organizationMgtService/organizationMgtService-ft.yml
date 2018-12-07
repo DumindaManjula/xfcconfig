@@ -38,7 +38,6 @@ service:
     userGroupPath:  /api/usergroups/{groupId}
     deleteUserCompany:  /api/users/{userId}?companyId={companyId}
     getUserGroupPath: /api/usergroups?companyId={companyId}&groupName={groupName}
-    nonAdminGroupPath: /api/usergroups?companyId={companyId}
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
