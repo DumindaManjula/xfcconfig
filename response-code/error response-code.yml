@@ -1,0 +1,37 @@
+E00001: userAccess.getUserByLogin(changePasswordRequestDTO.getUserName()) - Fail
+E00002: user not find by login name - Fail
+E00003: User not activated.
+E00004: User status not allow for activate user.
+E00005: User update issue.
+E00006: Password mismatch.
+E00007: Get user by activation code service fail.
+E00008: Cannot find user for the activation code.
+E00009: UserCompany creation issue.
+E00010: Cannot send emails
+E00011: Add user issue
+E00012: Add user issue - ServiceCallException
+E00013: Add user issue - Exception
+E00014: Get Organization detail by Id un-successful
+E00015: Cannot find the organization by given orgId
+E00016: Organization current status not allow for approve/reject
+E00017: Cannot find the organization contact details
+E00018: User group creation unsuccessful.
+E00019: User creation un-successful
+E00020: User creation un-successful
+E00021: Organization status change unsuccessful
+E00022: Organization status change unsuccessful
+E00023: Organization status change unsuccessful - reject status
+E00024: Get user company by userid, companyid issue
+E00025: Get all menu for company/admin fail, incorrect id
+E00026: Cannot find menu for this company. invalid companyID
+E00027: Get module by type method internal exception
+E00028: Cannot create user group. userManagement-addUserGroup
+E00029: Module creation unsuccessful
+E00030: Cannot find modules. - OrganizationManagementServiceImpl
+E00031: This company already used this invoice id.
+E00032: Invoice creation issue in InvoiceServiceImpl.createNewInvoice
+E00033: Module getting issue/or null. OrganizationManagement->OrganizationModuleManagementServiceImpl
+E00034: Get selected optional menu. OrganizationManagement->OrganizationModuleManagementServiceImpl
+E00035: Common support service execution issue for get modules by type.
+E00036: Module update issue in OrganizationManger -> addModules
+E00037: Module update service call issue OrganizationManger -> addModules

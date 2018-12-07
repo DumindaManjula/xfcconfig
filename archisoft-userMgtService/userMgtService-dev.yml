@@ -25,7 +25,7 @@ management:
 service:
   emailservice:
     serviceId:  emailService
-    emailApiPath: /api/email
+    emailApiPath: /api/email #ok
     gmailApiPath: /api/gmail
   userService:
     serviceId:  userservice
@@ -35,7 +35,7 @@ service:
     getUserGroupById:  /api/usergroups/{groupId}
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
     getUsersByEmailPath: /api/users?email={emailAddress} #ok
-    updateUserPath: /api/users/
+    updateUserPath: /api/users #ok
     getUsersByActivationCodePath: /api/users?activationCode={activationCode} #ok
     getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
     getAllUserCompaniesByUserIdAndType: /api/companies?userId={userId}&companyType={companyType}
@@ -62,9 +62,9 @@ archisoft:
     adminTokenValidityInMilliseconds: 3600000
     userTokenValidityInMilliseconds:  1800000
     temporaryTokenValidityInMilliseconds: 600000
-    refreshTokenValidityInMilliseconds: 2400000
+    refreshTokenValidityInMilliseconds: 3600000
     header: Authorization
   constant:
-    forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
+    forgotPasswordActivationLink: http://192.168.0.207:8080/#/change-password?key=
   user:
     userStatusBeforeActivate:  P
