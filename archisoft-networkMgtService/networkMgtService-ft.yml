@@ -1,3 +1,6 @@
+server:
+  port: 8621
+
 spring:
   profiles:
     active: ft
