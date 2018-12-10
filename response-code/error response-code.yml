@@ -35,3 +35,4 @@ E00034: Get selected optional menu. OrganizationManagement->OrganizationModuleMa
 E00035: Common support service execution issue for get modules by type.
 E00036: Module update issue in OrganizationManger -> addModules
 E00037: Module update service call issue OrganizationManger -> addModules
+E00038: Issue in get organization detail by business registration number

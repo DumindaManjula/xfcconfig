@@ -15,6 +15,9 @@ management:
 service:
   networkService:
     serviceId:  networkService
+  organizationServie:
+    serviceId: organizationService
+    getByBusinessRegistraitonNumber: /api/mtx/organizations?buzReg={buzReg}
 
 archisoft:
   network:
