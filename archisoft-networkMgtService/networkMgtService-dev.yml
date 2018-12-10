@@ -15,9 +15,10 @@ management:
 service:
   networkService:
     serviceId:  networkService
-    getSuppliersAdvanceSearchPath: /api/mtx/network/buyer/{buyerId}/advance?
-    updateSupplierStatusPath: /api/mtx/network/buyer/{buyerId}/suppliers/{supplierId}/status
-    supplierListToBuyerNetwork: /api/mtx/network/buyer/{buyerId}/suppliers
-    getBuyerListPath: /api/mtx/network/supplier/{supplierId}/buyers
-    getBuyersAdvanceSearchPath: /api/mtx/network/supplier/{supplierId}/advance?
-    getsupplierListPath: /api/mtx/network/buyer/
+  organizationServie:
+    serviceId: organizationService
+    getByBusinessRegistraitonNumber: /api/mtx/organizations?buzReg={buzReg}
+
+archisoft:
+  network:
+    maxInvitationPerRequest: 10
