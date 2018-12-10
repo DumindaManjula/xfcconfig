@@ -17,7 +17,7 @@ service:
     serviceId:  networkService
   organizationServie:
     serviceId: organizationService
-    getByBusinessRegistraitonNumber: /api/mtx/organizations?buzReg={buzReg}
+    addOrganizationDetailsPath: /api/mtx/organizations/mtx
 
 archisoft:
   network:
