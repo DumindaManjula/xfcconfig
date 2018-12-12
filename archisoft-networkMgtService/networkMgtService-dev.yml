@@ -26,6 +26,9 @@ service:
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
+  emailservice:
+    serviceId:  emailService
+    emailApiPath: /api/email
 
 archisoft:
   network:
