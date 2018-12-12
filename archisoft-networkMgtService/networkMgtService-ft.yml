@@ -15,10 +15,18 @@ management:
 service:
   networkService:
     serviceId:  networkService
+    addOrganizationAPIPath: /api/mtx/network
   organizationServie:
     serviceId: organizationService
     addOrganizationDetailsPath: /api/mtx/organizations/mtx
     organizationPath: /api/mtx/organizations/{orgId}
+  activityService:
+    serviceId:  userActivityService
+    addActivityPath:  /api/mtx/activities
+  emailservice:
+    serviceId:  emailService
+    emailApiPath: /api/email
+
 
 archisoft:
   network:
