@@ -19,7 +19,7 @@ service:
   organizationService:
     serviceId: organizationService
     organizationPath: /api/mtx/organizations/{orgId}
-    addOrganizationDetailsPath: /api/mtx/organizations/mtx
+    addOrganizationDetailsPath: /api/mtx/organizations/invite
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
