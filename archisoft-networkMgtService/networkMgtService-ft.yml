@@ -18,6 +18,7 @@ service:
   organizationServie:
     serviceId: organizationService
     addOrganizationDetailsPath: /api/mtx/organizations/mtx
+    organizationPath: /api/mtx/organizations/{orgId}
 
 archisoft:
   network:
