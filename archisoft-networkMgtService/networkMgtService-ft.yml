@@ -16,7 +16,7 @@ service:
   networkService:
     serviceId:  networkService
     addOrganizationAPIPath: /api/mtx/network
-  organizationServie:
+  organizationService:
     serviceId: organizationService
     addOrganizationDetailsPath: /api/mtx/organizations/mtx
     organizationPath: /api/mtx/organizations/{orgId}

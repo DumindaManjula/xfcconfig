@@ -16,9 +16,10 @@ service:
   networkService:
     serviceId:  networkService
     addOrganizationAPIPath: /api/mtx/network
-  organizationServie:
+  organizationService:
     serviceId: organizationService
     organizationPath: /api/mtx/organizations/{orgId}
+    addOrganizationDetailsPath: /api/mtx/organizations/mtx
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
