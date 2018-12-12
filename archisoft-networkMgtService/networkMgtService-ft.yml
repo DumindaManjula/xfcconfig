@@ -32,3 +32,5 @@ archisoft:
     maxInvitationPerRequest: 10
   organization:
     registrationPath: http://192.168.0.209:3000/#/suppliers/registration
+  email:
+    requestSupplierSubject: Invitaion for MTx by
