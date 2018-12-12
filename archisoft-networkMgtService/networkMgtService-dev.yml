@@ -23,6 +23,9 @@ service:
     serviceId: organizationService
     addOrganizationDetailsPath: /api/mtx/organizations/mtx
     organizationPath: /api/mtx/organizations/{orgId}
+  activityService:
+    serviceId:  userActivityService
+    addActivityPath:  /api/mtx/activities
 
 archisoft:
   network:
