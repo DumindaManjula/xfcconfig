@@ -39,3 +39,4 @@ E00038: Issue in get organization detail by business registration number
 E00039: networkManaget->netowrkService->InviteNewSupplier get org details issue
 E00040: networkManaget->netowrkService->InviteNewSupplier Supplier organization already registered
 E00041: networkManager->cannot send email
+E00042: InvoiceId cannot find by ID
