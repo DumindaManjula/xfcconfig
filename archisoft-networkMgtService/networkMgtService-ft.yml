@@ -24,9 +24,11 @@ service:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
   emailservice:
-    serviceId:  emailService
+    serviceId: emailService
     emailApiPath: /api/email
-
+  notificationservice:
+    serviceId: notificationservice
+    notificationApiPath: /api/ntf/users?companyId={companyId}&event={event}&eventName={eventName}
 
 archisoft:
   network:
