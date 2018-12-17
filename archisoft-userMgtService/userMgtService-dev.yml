@@ -59,6 +59,7 @@ service:
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
+    addUserActivityPath:  /api/mtx/useractivities
   activationkey:
     validInSecond: 300
 
