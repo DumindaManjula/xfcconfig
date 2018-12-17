@@ -47,6 +47,7 @@ service:
     updateUserImage: /api/users/{userId}/image
     getUsersById: /api/users/{userId}
     editUsergroup: /api/usergroups/{groupId}
+    editUserInfo: /api/users/{userId}/info
   organizationService:
     serviceId:  organizationservice
     getOrganizationModule: /api/mtx/organizations/{orgId}/menu
