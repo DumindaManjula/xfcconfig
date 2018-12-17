@@ -59,6 +59,7 @@ service:
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
+    addUserActivityPath:  /api/mtx/useractivities
   activationkey:
     validInSecond: 300
 
@@ -71,7 +72,7 @@ archisoft:
     refreshTokenValidityInMilliseconds: 3600000
     header: Authorization
   constant:
-    forgotPasswordActivationLink: http://192.168.0.207:8080/#/change-password?key=
+    forgotPasswordActivationLink: http://192.168.0.207:3000/#/change-password?key=
   user:
     userStatusBeforeActivate:  P
     adminCompanyId: MY00000A

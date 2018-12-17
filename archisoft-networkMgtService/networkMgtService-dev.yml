@@ -19,7 +19,7 @@ service:
   organizationService:
     serviceId: organizationService
     organizationPath: /api/mtx/organizations/{orgId}
-    addOrganizationDetailsPath: /api/mtx/organizations/mtx
+    addOrganizationDetailsPath: /api/mtx/organizations/invite
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
@@ -33,3 +33,7 @@ service:
 archisoft:
   network:
     maxInvitationPerRequest: 10
+  organization:
+    registrationPath: http://192.168.0.207:3000/#/suppliers/registration
+  email:
+    requestSupplierSubject: Invitaion for MTx by
