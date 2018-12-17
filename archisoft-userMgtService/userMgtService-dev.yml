@@ -46,7 +46,7 @@ service:
     getUsersById: /api/users/{userId}
     editUsergroup: /api/usergroups/{groupId}
     editUserInfo: /api/users/{userId}/info
-    deleteUserFromCompany: /api/users/{id}?companyId={companyId}
+    deleteUserFromCompany: /api/users/{userId}?companyId={companyId}
   organizationService:
     serviceId:  organizationservice
     getOrganizationModule: /api/mtx/organizations/{orgId}/menu
