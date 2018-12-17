@@ -37,8 +37,6 @@ service:
     getUsersByEmailPath: /api/users?email={emailAddress}
     updateUserPath: /api/users
     getUsersByActivationCodePath: /api/users?activationCode={activationCode}
-    getUserCompanyByUserIdAndType: /api/company?userId={userId}&companyType={companyType}
-    getAllUserCompaniesByUserIdAndType: /api/companies?userId={userId}&companyType={companyType}
     updateUserLoginTime:  /api/users/{userId}
     addUserCompany: /api/company
     deleteUserCompany: /api/company/{companyId}
@@ -48,6 +46,7 @@ service:
     getUsersById: /api/users/{userId}
     editUsergroup: /api/usergroups/{groupId}
     editUserInfo: /api/users/{userId}/info
+    deleteUserFromCompany: /api/users/{id}?companyId={companyId}
   organizationService:
     serviceId:  organizationservice
     getOrganizationModule: /api/mtx/organizations/{orgId}/menu
