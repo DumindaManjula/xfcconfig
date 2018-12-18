@@ -30,7 +30,7 @@ service:
   notificationservice:
     serviceId: notificationservice
     notificationApiPath: /api/ntf/users?companyId={companyId}&event={event}&eventName={eventName}
-    addNotificationPath: /api/nft
+    addNotificationPath: /api/ntf
 
 archisoft:
   network:
