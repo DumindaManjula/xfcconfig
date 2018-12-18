@@ -26,7 +26,7 @@ service:
   emailservice:
     serviceId: emailService
     emailApiPath: /api/email
-    emailNotificationPath: /api/gmail/notification?message={message}&subject={subject}
+    emailNotificationPath: /api/emails
   notificationservice:
     serviceId: notificationservice
     notificationApiPath: /api/ntf/users?companyId={companyId}&event={event}&eventName={eventName}
