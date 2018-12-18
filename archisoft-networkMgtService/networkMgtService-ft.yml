@@ -33,7 +33,7 @@ service:
   notificationservice:
     serviceId: notificationservice
     notificationApiPath: /api/ntf/users?orgId={orgId}&event={event}&eventName={eventName}
-    addNotificationPath: /api/ntf?message={message}&read={read}
+    addNotificationPath: /api/ntf
 
 archisoft:
   network:
