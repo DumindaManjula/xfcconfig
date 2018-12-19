@@ -14,7 +14,7 @@ management:
 
 service:
   networkService:
-    serviceId:  networkService
+    serviceId:  networkMgtService
     addOrganizationAPIPath: /api/mtx/network
   organizationService:
     serviceId: organizationService
