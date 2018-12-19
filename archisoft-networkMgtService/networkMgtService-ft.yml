@@ -29,10 +29,11 @@ service:
   emailservice:
     serviceId:  emailService
     emailApiPath: /api/email
-    emailNotificationPath: /api/gmail/notification?message={message}&subject={subject}
+    emailNotificationPath: /api/emails
   notificationservice:
     serviceId: notificationservice
     notificationApiPath: /api/ntf/users?orgId={orgId}&event={event}&eventName={eventName}
+    addNotificationPath: /api/ntf
 
 archisoft:
   network:
