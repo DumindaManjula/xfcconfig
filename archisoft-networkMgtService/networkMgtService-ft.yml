@@ -42,6 +42,8 @@ archisoft:
     registrationPath: http://192.168.0.207:3000/#/suppliers/registration
   email:
     requestSupplierSubject: Invitaion for MTx by
+  dashboard:
+    inviteBody: Buyer [BC] has sent an invitation to your company [SC] to join their network.
 
 
 
