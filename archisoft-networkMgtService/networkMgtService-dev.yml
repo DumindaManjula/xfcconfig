@@ -26,9 +26,11 @@ service:
   emailservice:
     serviceId:  emailService
     emailApiPath: /api/email
+    emailNotificationPath: /api/emails
   notificationservice:
     serviceId: notificationservice
     notificationApiPath: /api/ntf/users?companyId={companyId}&event={event}&eventName={eventName}
+    addNotificationPath: /api/ntf
 
 archisoft:
   network:
