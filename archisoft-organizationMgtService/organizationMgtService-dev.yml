@@ -19,7 +19,7 @@ service:
   organizationService:
     serviceId:  organizationService
     selfRegistrationPath: /api/mtx/organizations/self
-    mtxRegistrationPath: /api//organizations/mtx
+    mtxRegistrationPath: /api/mtx/organizations/mtx
     deleteOrganizationPath: /api/mtx/organizations/{orgId}
     updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
     organizationPath: /api/mtx/organizations/{orgId}
@@ -29,7 +29,7 @@ service:
     getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
   activityService:
     serviceId:  userActivityService
-    addActivityPath:  /api/mtx/activities
+    addActivityPath:  /api/mtx/useractivities
   userService:
     serviceId:  userservice
     createUserGroupPath:  /api/usergroups
