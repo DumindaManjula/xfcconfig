@@ -29,7 +29,7 @@ service:
     getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
   activityService:
     serviceId:  userActivityService
-    addActivityPath:  /api/mtx/activities
+    addActivityPath:  /api/mtx/useractivities
   userService:
     serviceId:  userservice
     createUserGroupPath:  /api/usergroups
