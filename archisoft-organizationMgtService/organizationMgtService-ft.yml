@@ -30,6 +30,7 @@ service:
     getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
     addRemitanceAddress: /api/mtx/organizations/{orgId}/remittance
     addBankPath: /api/mtx/organizations/{orgId}/banks
+    addCurrencyPath: /api/mtx/organizations/{orgId}/currencies
   activityService:
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
