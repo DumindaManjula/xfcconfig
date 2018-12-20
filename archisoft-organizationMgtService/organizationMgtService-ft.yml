@@ -31,6 +31,7 @@ service:
     getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
     addBankPath: /api/mtx/organizations/{orgId}/banks
     addCurrencyPath: /api/mtx/organizations/{orgId}/currencies
+    addTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
