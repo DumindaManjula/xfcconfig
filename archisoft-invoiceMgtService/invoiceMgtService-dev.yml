@@ -1,0 +1,20 @@
+server:
+  port: 8690
+
+spring:
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: mtx_invoice
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
