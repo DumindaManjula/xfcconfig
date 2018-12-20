@@ -1,13 +1,9 @@
 server:
-  port: 8690
+  port: 8691
 
 spring:
   profiles:
     active: ft
-  data:
-    mongodb:
-      uri: ${DB_URL:mongodb://192.168.0.207:27017}
-      database: mtx_invoice
   cloud:
     discovery:
       enabled: false
@@ -18,3 +14,8 @@ spring:
 management:
   security:
     enable: false
+
+service:
+  organizationService:
+    serviceId:  organizationService
+    organizationByIDPath: /api/mtx/organizations/{orgId}
