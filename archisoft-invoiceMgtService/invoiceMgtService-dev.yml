@@ -1,0 +1,21 @@
+server:
+  port: 8691
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
+
+service:
+  organizationService:
+    serviceId:  organizationService
+    organizationByIDPath: /api/mtx/organizations/{orgId}
