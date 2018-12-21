@@ -22,3 +22,4 @@ service:
   invoiceService:
     serviceId: invoiceService
     invoiceBasePath: /api/mtx/invoices
+    invoiceByIdPath: /api/mtx/invoices/{invoiceId}
