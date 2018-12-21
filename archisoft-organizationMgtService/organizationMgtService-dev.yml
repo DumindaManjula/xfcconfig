@@ -31,7 +31,8 @@ service:
     addRemitanceAddress: /api/mtx/organizations/{orgId}/remittance
     addBankPath: /api/mtx/organizations/{orgId}/banks
     addCurrencyPath: /api/mtx/organizations/{orgId}/currencies
-    addTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
+    addTaxPath: /api/mtx/organizations/{orgId}/tax
+    editTaxpath: /api/mtx/organizations/{orgId}/tax/{taxId}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
