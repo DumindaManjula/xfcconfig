@@ -35,6 +35,7 @@ service:
     editTaxpath: /api/mtx/organizations/{orgId}/tax/{taxId}
     addShipPath: /api/mtx/organizations/{orgId}/shipfrom
     editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shipingId}
+    addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
