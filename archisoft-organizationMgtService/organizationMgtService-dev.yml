@@ -33,6 +33,9 @@ service:
     addCurrencyPath: /api/mtx/organizations/{orgId}/currencies
     addTaxPath: /api/mtx/organizations/{orgId}/tax
     editTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
+    addShipPath: /api/mtx/organizations/{orgId}/shipfrom
+    editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shipingId}
+    addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
