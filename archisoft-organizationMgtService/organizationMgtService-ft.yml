@@ -38,6 +38,7 @@ service:
     addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
     addContactPath: /api/mtx/organizations/{orgId}/contacts
     editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
+    deleteContactPath: /api/mtx/organizations/{orgId}/contacts/{email}
   activityService:
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
