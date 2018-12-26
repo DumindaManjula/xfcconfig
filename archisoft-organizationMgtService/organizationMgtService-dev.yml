@@ -43,6 +43,7 @@ service:
     addRelationShipPath: /api/mtx/organizations/{orgId}/relationship
     deleteShipFrom: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
     deleteTaxPath: /api/mtx/organizations/{orgId}/tax/{taxCode}
+    deleteCurrencyPath: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
