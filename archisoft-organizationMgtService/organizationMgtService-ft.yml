@@ -38,6 +38,7 @@ service:
     addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
     addContactPath: /api/mtx/organizations/{orgId}/contacts
     editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
+    deleteContactPath: /api/mtx/organizations/{orgId}/contacts/{email}
     deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents?docName={docName}
     addRelationShipPath: /api/mtx/organizations/{orgId}/relationship
     deleteShipFrom: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
