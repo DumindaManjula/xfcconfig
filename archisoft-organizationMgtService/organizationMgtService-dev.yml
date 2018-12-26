@@ -41,6 +41,7 @@ service:
     deleteContactPath: /api/mtx/organizations/{orgId}/contacts/{email}
     deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents?docName={docName}
     addRelationShipPath: /api/mtx/organizations/{orgId}/relationship
+    deleteShipFrom: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
