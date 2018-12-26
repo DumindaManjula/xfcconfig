@@ -44,6 +44,7 @@ service:
     deleteShipFrom: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
     deleteTaxPath: /api/mtx/organizations/{orgId}/tax/{taxCode}
     deleteCurrencyPath: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
+    editCurrencyStatus: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
   activityService:
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
