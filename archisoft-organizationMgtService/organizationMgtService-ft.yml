@@ -34,7 +34,7 @@ service:
     addTaxPath: /api/mtx/organizations/{orgId}/tax
     editTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
     addShipPath: /api/mtx/organizations/{orgId}/shipfrom
-    editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shipingId}
+    editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
     addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
     addContactPath: /api/mtx/organizations/{orgId}/contacts
     editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
@@ -45,6 +45,7 @@ service:
     deleteTaxPath: /api/mtx/organizations/{orgId}/tax/{taxCode}
     deleteCurrencyPath: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
     editCurrencyStatus: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
+    editRemittance: /api/mtx/organizations/{orgId}/remittance/{remittanceId}
   activityService:
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
