@@ -40,6 +40,7 @@ service:
     editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
     deleteContactPath: /api/mtx/organizations/{orgId}/contacts/{email}
     deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents?docName={docName}
+    addRelationShipPath: /api/mtx/organizations/{orgId}/relationship
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
