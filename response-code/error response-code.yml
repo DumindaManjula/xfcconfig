@@ -41,3 +41,6 @@ E00040: networkManaget->netowrkService->InviteNewSupplier Supplier organization 
 E00041: networkManager->cannot send email
 E00042: InvoiceId cannot find by ID
 E00043: Invoice->InvoiceServiceImpl->AddItem issue. check the exception
+E00044: InvoiceManager->Change header info - Cannot find the invoice
+E00045: InvoiceManager->Change header info - Cannot change this invoice - different statusCode
+E00046: InvoiceManager->Change header info - Invoice header info update issue
