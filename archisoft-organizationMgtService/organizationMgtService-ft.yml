@@ -23,7 +23,6 @@ service:
     editOrganizaitonInfoPath: /api/mtx/organizations/{orgId}/mtx2
     deleteOrganizationPath: /api/mtx/organizations/{orgId}
     updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
-    deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
     organizationPath: /api/mtx/organizations/{orgId}
     changeOrganizationStatusPath: /api/mtx/organizations/{orgId}/status
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
@@ -40,6 +39,7 @@ service:
     addContactPath: /api/mtx/organizations/{orgId}/contacts
     editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
     deleteContactPath: /api/mtx/organizations/{orgId}/contacts/{email}
+    deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents?docName={docName}
   activityService:
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu

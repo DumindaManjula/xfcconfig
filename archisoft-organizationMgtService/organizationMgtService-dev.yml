@@ -39,7 +39,7 @@ service:
     addContactPath: /api/mtx/organizations/{orgId}/contacts
     editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
     deleteContactPath: /api/mtx/organizations/{orgId}/contacts/{email}
-    deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
+    deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents?docName={docName}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
