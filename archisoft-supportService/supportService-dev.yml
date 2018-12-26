@@ -15,6 +15,11 @@ spring:
       auto-registration:
         enabled: true
 
+service:
+  activityService:
+    serviceId:  userActivityService
+    addUserActivityPath:  /api/mtx/useractivities
+
 management:
   security:
     enable: false
