@@ -25,7 +25,7 @@ service:
     addOrganizationDetailsPath: /api/mtx/organizations/invite
   activityService:
     serviceId:  userActivityService
-    addActivityPath:  /api/mtx/activities
+    addActivityPath:  /api/mtx/useractivities
   emailservice:
     serviceId:  emailService
     emailApiPath: /api/email
