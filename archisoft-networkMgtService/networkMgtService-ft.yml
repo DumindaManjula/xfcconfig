@@ -23,6 +23,7 @@ service:
   organizationService:
     serviceId: organizationService
     organizationPath: /api/mtx/organizations/{orgId}
+    organizationByBizRegPath: /api/mtx/organizations?buzReg={buzReg}
     addOrganizationDetailsPath: /api/mtx/organizations/invite
   activityService:
     serviceId:  userActivityService
