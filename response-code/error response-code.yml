@@ -44,3 +44,5 @@ E00043: Invoice->InvoiceServiceImpl->AddItem issue. check the exception
 E00044: InvoiceManager->Change header info - Cannot find the invoice
 E00045: InvoiceManager->Change header info - Cannot change this invoice - different statusCode
 E00046: InvoiceManager->Change header info - Invoice header info update issue
+E00038: NetworkManager -> create network issue (NetworkServiceImpl)
+E00039: NetworkManager Service execution issue.
