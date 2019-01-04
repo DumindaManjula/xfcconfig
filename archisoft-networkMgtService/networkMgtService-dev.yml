@@ -29,7 +29,7 @@ service:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
   emailservice:
-    serviceId:  emailService
+    serviceId: emailService
     emailApiPath: /api/email
     emailNotificationPath: /api/emails
   notificationservice:
