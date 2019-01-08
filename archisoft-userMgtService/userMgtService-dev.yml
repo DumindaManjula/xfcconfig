@@ -61,8 +61,8 @@ archisoft:
   jwtToken:
     secretKey:  my-secret-token-to-change-in-production
     adminTokenValidityInMilliseconds: 3600000
-    userTokenValidityInMilliseconds:  1800000
-    temporaryTokenValidityInMilliseconds: 600000
+    userTokenValidityInMilliseconds:  300000
+    temporaryTokenValidityInMilliseconds: 60000
     refreshTokenValidityInMilliseconds: 3600000
     header: Authorization
   constant:
