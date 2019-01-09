@@ -76,3 +76,4 @@ archisoft:
   user:
     userStatusBeforeActivate:  P
     adminCompanyId: MY00000A
+    mtxLoginAttempt: 3
