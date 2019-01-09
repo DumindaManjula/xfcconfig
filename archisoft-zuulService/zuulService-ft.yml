@@ -32,6 +32,10 @@ hystrix:
 zuul:
   sensitive-headers: Cookie,Set-Cookie
 
+archisoft:
+  jwtToken:
+    secretKey:  my-secret-token-to-change-in-production
+
 mtx:
   services:
     nonsecure:
