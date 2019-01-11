@@ -47,7 +47,7 @@ service:
     editUsergroup: /api/usergroups/{groupId}
     editUserInfo: /api/users/{userId}/info
     deleteUserFromCompany: /api/users/{userId}?companyId={companyId}
-    updateLoginAttempt: /api/users/{userId}/attempt?atm={atm}
+    updateLoginAttempt: /api/users/attempt?email={email}&atm={atm}
   organizationService:
     serviceId:  organizationservice
     getOrganizationModule: /api/mtx/organizations/{orgId}/menu
