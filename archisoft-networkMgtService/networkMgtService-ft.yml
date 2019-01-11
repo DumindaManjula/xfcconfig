@@ -48,8 +48,8 @@ archisoft:
     inviteBuyerSubject: Request to join [BC] Network
   dashboard:
     inviteSupplierBody:
-      message: Buyer [BC] has sent an invitation to your company [SC] to join their network.
-      subject: Request to join [BC] Network
+      message: Buyer '[BC]' has sent an invitation to your company '[SC]' to join their network.
+      subject: Request to join '[BC]' Network
     inviteBuyerBody:
-      message: Supplier [SC] has sent a request to be part of your company [BC]’s network.
-      subject: Request to join [SC] Network
+      message: Supplier '[SC]' has sent a request to be part of your company '[BC]'’s network.
+      subject: Request to join '[SC]' Network
