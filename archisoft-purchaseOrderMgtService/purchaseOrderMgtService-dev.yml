@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    active: ft
+    active: dev
   cloud:
     discovery:
       enabled: false
@@ -24,3 +24,6 @@ service:
     purchaseOrderBasePath: /api/mtx/po
     purchaseOrderByIdPath: /api/mtx/po/{poId}
     purchaseOrderItemsPath: /api/mtx/po/{poId}/items
+  activityService:
+    serviceId:  userActivityService
+    addActivityPath:  /api/mtx/useractivities
