@@ -48,3 +48,6 @@ E00038: NetworkManager -> create network issue (NetworkServiceImpl)
 E00039: NetworkManager Service execution issue.
 E00049: Invalid PO when get by ID
 E00050: Exception happen in addItem to PO
+E00051: PurchangeOrderManager->Change header info - Cannot find the PO
+E00052: PurchangeOrderManager->Change header info - Cannot change this PO - different statusCode
+E00053: PurchangeOrderManager->Change header info - PO header info update issue
