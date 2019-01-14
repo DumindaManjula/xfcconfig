@@ -1,0 +1,26 @@
+server:
+  port: 8696
+
+spring:
+  profiles:
+    active: ft
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
+
+service:
+  organizationService:
+    serviceId:  organizationService
+    organizationByIDPath: /api/mtx/organizations/{orgId}
+  invoiceService:
+    serviceId: invoiceService
+    invoiceBasePath: /api/mtx/invoices
+    invoiceByIdPath: /api/mtx/invoices/{invoiceId}
+    invoiceItemsPath: /api/mtx/invoices/{invoiceId}/items
