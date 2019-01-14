@@ -19,8 +19,8 @@ service:
   organizationService:
     serviceId:  organizationService
     organizationByIDPath: /api/mtx/organizations/{orgId}
-  invoiceService:
-    serviceId: invoiceService
-    invoiceBasePath: /api/mtx/invoices
-    invoiceByIdPath: /api/mtx/invoices/{invoiceId}
-    invoiceItemsPath: /api/mtx/invoices/{invoiceId}/items
+  purchaseOrderService:
+    serviceId: purchaseOrderService
+    purchaseOrderBasePath: /api/mtx/po
+    purchaseOrderByIdPath: /api/mtx/po/{invoiceId}
+    purchaseOrderItemsPath: /api/mtx/po/{invoiceId}/items
