@@ -46,3 +46,5 @@ E00045: InvoiceManager->Change header info - Cannot change this invoice - differ
 E00046: InvoiceManager->Change header info - Invoice header info update issue
 E00038: NetworkManager -> create network issue (NetworkServiceImpl)
 E00039: NetworkManager Service execution issue.
+E00049: Invalid PO when get by ID
+E00050: Exception happen in addItem to PO
