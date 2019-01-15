@@ -51,3 +51,5 @@ E00050: Exception happen in addItem to PO
 E00051: PurchangeOrderManager->Change header info - Cannot find the PO
 E00052: PurchangeOrderManager->Change header info - Cannot change this PO - different statusCode
 E00053: PurchangeOrderManager->Change header info - PO header info update issue
+E00054: UserNotificationSetting creation issue
+E00055: UserNotificationSetting edit issue
