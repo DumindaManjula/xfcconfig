@@ -38,6 +38,7 @@ service:
     updateUserPath: /api/users #ok
     getUsersByActivationCodePath: /api/users?activationCode={activationCode} #ok
     updateUserLoginTime:  /api/users/{userId}
+    setDetfaultCompany:  /api//users/{userId}/company
     addUserCompany: /api/company
     deleteUserCompany: /api/company/{companyId}
     getusergroupById: /api/usergroups/{id}
@@ -57,6 +58,7 @@ service:
     addUserActivityPath:  /api/mtx/useractivities
   activationkey:
     validInSecond: 300
+    activateUserLinkValidityPeriod: 259200
 
 archisoft:
   jwtToken:
