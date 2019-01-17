@@ -38,7 +38,7 @@ service:
     updateUserPath: /api/users #ok
     getUsersByActivationCodePath: /api/users?activationCode={activationCode} #ok
     updateUserLoginTime:  /api/users/{userId}
-    setDetfaultCompany:  /api//users/{userId}/company
+    setDefaultCompany:  /api//users/{userId}/company
     addUserCompany: /api/company
     deleteUserCompany: /api/company/{companyId}
     getusergroupById: /api/usergroups/{id}
