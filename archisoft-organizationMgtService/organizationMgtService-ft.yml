@@ -68,7 +68,7 @@ service:
   commonService:
     serviceId: supportservice
     menuByType : /api/menu/{id}?type={type}
-    documentByType : /api/documents/app?type={type}
+    documentByType : /api/documents/all?type={type}
 
 archisoft:
   organization:
