@@ -14,12 +14,6 @@ spring:
     service-registry:
       auto-registration:
         enabled: true
-  security:
-    basic:
-      enabled: true
-      user:
-        name: admin
-        password: admin
 
 security:
   ignored=/**
