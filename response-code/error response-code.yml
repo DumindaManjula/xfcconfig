@@ -53,3 +53,5 @@ E00052: PurchangeOrderManager->Change header info - Cannot change this PO - diff
 E00053: PurchangeOrderManager->Change header info - PO header info update issue
 E00054: UserNotificationSetting creation issue
 E00055: UserNotificationSetting edit issue
+E00056: Set default company issue
+E00057: Reset activation key issue
