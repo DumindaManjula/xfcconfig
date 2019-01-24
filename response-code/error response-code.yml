@@ -55,3 +55,4 @@ E00054: UserNotificationSetting creation issue
 E00055: UserNotificationSetting edit issue
 E00056: Set default company issue
 E00057: Reset activation key issue
+E00058: Service execution issue - change status
