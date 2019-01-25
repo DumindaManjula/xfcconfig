@@ -17,3 +17,8 @@ security:
 management:
   security:
     enable: false
+
+service:
+  organizationService:
+    serviceId:  organizationService
+    organiztionReportPath: /api/mtx/organizations/report
