@@ -33,3 +33,6 @@ service:
     serviceId: notificationservice
     notificationApiPath: /api/ntf/users?orgId={orgId}&event={event}
     addNotificationPath: /api/ntf
+  emailservice:
+    serviceId: emailService
+    emailsApiPath: /api/emails
