@@ -42,7 +42,7 @@ service:
     addUserCompany: /api/company
     deleteUserCompany: /api/company/{companyId}
     getusergroupById: /api/usergroups/{id}
-    addUsergroup: api/usergroups
+    addUsergroup: /api/usergroups
     updateUserImage: /api/users/{userId}/image
     getUsersById: /api/users/{userId}
     editUsergroup: /api/usergroups/{groupId}
