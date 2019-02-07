@@ -72,5 +72,4 @@ archisoft:
     forgotPasswordActivationLink: http://192.168.0.207:3000/#/change-password?key=
   user:
     userStatusBeforeActivate:  P
-    adminCompanyId: MY00000A
     mtxLoginAttempt: 3
