@@ -27,6 +27,7 @@ service:
     invoiceRemittancePath: /api/mtx/invoices/{invoiceId}/remittance
     invoiceStatusPath: /api/mtx/invoices/{invoiceId}/status
     invoicePaymentPath: /api/mtx/invoices/{invoiceId}/payment
+    invoiceAttachmentsPath: /api/mtx/invoices/{invoiceId}/attachment
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
