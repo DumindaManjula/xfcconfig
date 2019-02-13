@@ -25,6 +25,7 @@ service:
     purchaseOrderByIdPath: /api/mtx/po/{poId}
     purchaseOrderItemsPath: /api/mtx/po/{poId}/items
     purchaseOrderStatusPath: /api/mtx/po/{poId}/status
+    purchaseOrderAttachmentsPath: /api/mtx/po/{poId}/attachment
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
