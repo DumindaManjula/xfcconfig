@@ -30,6 +30,8 @@ archisoft:
     adminCompanyId: MY00000A
   email:
     emailTopic: email-topic
+  kafka:
+    server: 192.168.0.207:9092
 
 service:
   commonService:
