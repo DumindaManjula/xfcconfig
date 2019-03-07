@@ -24,6 +24,7 @@ service:
     invoiceBasePath: /api/mtx/invoices
     invoiceByIdPath: /api/mtx/invoices/{invoiceId}
     invoiceItemsPath: /api/mtx/invoices/{invoiceId}/items
+    invoiceItemPath: /api/mtx/invoices/{invoiceId}/items/{itemId}
     invoiceRemittancePath: /api/mtx/invoices/{invoiceId}/remittance
     invoiceStatusPath: /api/mtx/invoices/{invoiceId}/status
     invoicePaymentPath: /api/mtx/invoices/{invoiceId}/payment
