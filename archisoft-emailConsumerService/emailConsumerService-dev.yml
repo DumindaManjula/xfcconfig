@@ -44,4 +44,4 @@ archisoft:
     routingkey: archi.routingkey
     failexchange: archi.fail
     failroutingkey: archi.failroutingkey
-    queue: archisoft.email
+    queue: archisoft-email
