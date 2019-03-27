@@ -42,4 +42,6 @@ archisoft:
   rabbitmq:
     exchange: archi.direct
     routingkey: archi.routingkey
+    failexchange: archi.fail
+    failroutingkey: archi.failroutingkey
     queue: archi.queue.email
