@@ -26,7 +26,7 @@ spring:
           starttls:
             enable: false
   rabbitmq:
-    host: localhost
+    host: 192.168.0.207
     port: 5672
     username: guest
     password: guest
@@ -44,4 +44,4 @@ archisoft:
     routingkey: archi.routingkey
     failexchange: archi.fail
     failroutingkey: archi.failroutingkey
-    queue: archi.queue.email
+    queue: archi.email
