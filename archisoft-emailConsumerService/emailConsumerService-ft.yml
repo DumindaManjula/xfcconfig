@@ -39,9 +39,3 @@ archisoft:
   constant:
     supportEmail: mtxsupport@archisoftglobal.com
     systemEmail:  mtxsystem@archisoftglobal.com
-  rabbitmq:
-    exchange: archi.direct
-    routingkey: archi.routingkey
-    failexchange: archi.fail
-    failroutingkey: archi.failroutingkey
-    queue: archisoft-email
