@@ -8,6 +8,11 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
+  rabbitmq:
+    host: 192.168.0.207
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   instance:
@@ -32,6 +37,12 @@ archisoft:
     emailTopic: email-topic
   kafka:
     server: 192.168.0.207:9092
+  rabbitmq:
+    exchange: archi.direct
+    routingkey: archi.routingkey
+    failexchange: archi.fail
+    failroutingkey: archi.failroutingkey
+    queue: archisoft-email
 
 service:
   commonService:

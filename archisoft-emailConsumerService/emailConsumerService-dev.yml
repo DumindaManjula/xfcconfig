@@ -25,11 +25,6 @@ spring:
           auth: true
           starttls:
             enable: false
-  rabbitmq:
-    host: 192.168.0.207
-    port: 5672
-    username: guest
-    password: guest
 
 management:
   security:
@@ -39,9 +34,3 @@ archisoft:
   constant:
     supportEmail: mtxsupport@archisoftglobal.com
     systemEmail:  mtxsystem@archisoftglobal.com
-  rabbitmq:
-    exchange: archi.direct
-    routingkey: archi.routingkey
-    failexchange: archi.fail
-    failroutingkey: archi.failroutingkey
-    queue: archi.email
