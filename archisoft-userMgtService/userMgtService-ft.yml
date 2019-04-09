@@ -52,6 +52,7 @@ service:
   organizationService:
     serviceId:  organizationservice
     getOrganizationModule: /api/mtx/organizations/{orgId}/menu
+    organizationPath: /api/mtx/organizations/{orgId}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/activities
