@@ -60,6 +60,7 @@ service:
     deleteUserCompany:  /api/users/{userId}?companyId={companyId}
     getUserGroupPath: /api/usergroups?companyId={companyId}&groupName={groupName}
     updateUserCompanyNamePath: /api/companies/{companyId}?companyName={companyName}
+    checkEmailValidityPath: /api/users/company?companyId={companyId}&emailAddress={emailAddress}
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
