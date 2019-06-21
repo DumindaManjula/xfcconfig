@@ -31,8 +31,8 @@ management:
     enable: false
 
 archisoft:
-  constant:
-    supportEmail: mtxsupport@archisoftglobal.com
-    systemEmail:  mtxsystem@archisoftglobal.com
+#  constant:
+#    supportEmail: mtxsupport@archisoftglobal.com
+#    systemEmail:  mtxsystem@archisoftglobal.com
   rabbitmq:
     queue: document
