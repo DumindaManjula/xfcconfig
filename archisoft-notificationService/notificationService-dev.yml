@@ -15,6 +15,13 @@ spring:
       auto-registration:
         enabled: true
 
+service:
+  notificationservice:
+    serviceId: notificationservice
+  emailservice:
+    serviceId: emailService
+    emailsApiPath: /api/emails
+
 security:
   ignored=/**
 
