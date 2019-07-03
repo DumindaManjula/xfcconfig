@@ -37,3 +37,8 @@ service:
   emailservice:
     serviceId: emailService
     emailsApiPath: /api/emails
+
+archisoft:
+  rabbitmq:
+    notificationExchange: archi.notification
+    notificationKey: archi.notificationKey
