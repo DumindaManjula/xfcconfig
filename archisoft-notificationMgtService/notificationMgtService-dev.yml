@@ -1,0 +1,32 @@
+server:
+  port: 8671
+
+spring:
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: agc_ntf
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+service:
+  notificationservice:
+    serviceId: notificationservice
+    addNotificationPath: /api/ntf
+    notificationApiPath: /api/ntf/users?orgId={orgId}&event={event}
+  emailservice:
+    serviceId: emailservice
+    emailsApiPath: /api/emails
+
+security:
+  ignored=/**
+
+management:
+  security:
+    enable: false
