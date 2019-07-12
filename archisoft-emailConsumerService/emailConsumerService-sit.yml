@@ -1,0 +1,36 @@
+server:
+  port: 8623
+
+spring:
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: agc_mail
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+  mail:
+    host: mail.archisoftglobal.com
+    port: 587
+    username: mtxsystem@archisoftglobal.com
+    password: mtxEmailP@ssw0rd
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: false
+
+management:
+  security:
+    enable: false
+
+archisoft:
+  constant:
+    supportEmail: mtxsupport@archisoftglobal.com
+    systemEmail:  mtxsystem@archisoftglobal.com
