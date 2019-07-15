@@ -1,0 +1,77 @@
+server:
+  port: 8680
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+management:
+  security:
+    enable: false
+
+service:
+  organizationService:
+    serviceId:  organizationService
+    selfRegistrationPath: /api/mtx/organizations/self
+    mtxRegistrationPath: /api/mtx/organizations/mtx
+    editOrganizaitonInfoPath: /api/mtx/organizations/{orgId}/mtx2
+    deleteOrganizationPath: /api/mtx/organizations/{orgId}
+    updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
+    organizationPath: /api/mtx/organizations/{orgId}
+    changeOrganizationStatusPath: /api/mtx/organizations/{orgId}/status
+    updateOrganizationImage: /api/mtx/organizations/{orgId}/image
+    addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
+    getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
+    addRemittanceAddress: /api/mtx/organizations/{orgId}/remittance
+    addBankPath: /api/mtx/organizations/{orgId}/banks
+    bankPath: /api/mtx/organizations/{orgId}/banks/{bankId}
+    addCurrencyPath: /api/mtx/organizations/{orgId}/currencies
+    addTaxPath: /api/mtx/organizations/{orgId}/tax
+    editTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
+    addShipPath: /api/mtx/organizations/{orgId}/shipfrom
+    editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shipingId}
+    addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
+    addContactPath: /api/mtx/organizations/{orgId}/contacts
+    editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
+    deleteContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
+    deleteOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents?docName={docName}
+    addRelationShipPath: /api/mtx/organizations/{orgId}/relationship
+    deleteShipFrom: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
+    deleteTaxPath: /api/mtx/organizations/{orgId}/tax/{taxCode}
+    deleteCurrencyPath: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
+    editCurrencyStatus: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
+    editRemittance: /api/mtx/organizations/{orgId}/remittance/{remittanceId}
+  activityService:
+    serviceId:  userActivityService
+    addActivityPath:  /api/mtx/useractivities
+  userService:
+    serviceId:  userservice
+    createUserGroupPath:  /api/usergroups
+    userGroupPath:  /api/usergroups/{groupId}
+    deleteUserCompany:  /api/users/{userId}?companyId={companyId}
+    getUserGroupPath: /api/usergroups?companyId={companyId}&groupName={groupName}
+    updateUserCompanyNamePath: /api/companies/{companyId}?companyName={companyName}
+  userMgtService:
+    serviceId:  usermgtservice
+    createUserPath:  /api/users
+  emailservice:
+    serviceId:  emailService
+    emailApiPath: /api/email
+  commonService:
+    serviceId: supportservice
+    menuByType : /api/menu/{id}?type={type}
+    documentByType : /api/documents/all?type={type}
+
+archisoft:
+  organization:
+    beforeApproveRejectStatus: WA
+  email:
+    subject:
+      rejectCompany: Company registration fail
+
