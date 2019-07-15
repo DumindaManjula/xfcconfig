@@ -42,7 +42,7 @@ archisoft:
     routingkey: archi.routingkey
     failexchange: archi.fail
     failroutingkey: archi.failroutingkey
-    queue: archisoft-email-sit
+    queue: archisoft-email
 
 service:
   commonService:
