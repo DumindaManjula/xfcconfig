@@ -47,6 +47,9 @@ service:
   emailservice:
     serviceId: emailService
     emailsApiPath: /api/emails
+  creditService:
+    serviceId: creditService
+    creditServiceApiPath: /api/usages
 
 archisoft:
   rabbitmq:
