@@ -1,0 +1,38 @@
+server:
+  port: 9090
+
+spring:
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: agc_uaa
+  profiles:
+    active: dev
+
+management:
+  security:
+    enable: false
+
+ribbon:
+  eureka:
+    enabled:  true
+  host:
+    connectTimeoutMillis: 600000
+    socketTimeoutMillis:  600000
+  ReadTimeout:  30000
+  ConnectTimeout: 30000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds:  120000
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
+
+mtx:
+  services:
+    nonsecure:
+      (/usermgtservice/user/+(authenticate|password|resetpwd|activate|logout))|(/supportservice/api/+(countries|biznature|uoms))|(/organizationmgtservice/api/organizations/self)|(/supportservice/api/countries/+[A-Z]{2,3}+/states)

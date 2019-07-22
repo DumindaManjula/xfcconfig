@@ -7,7 +7,7 @@ spring:
       uri: ${DB_URL:mongodb://192.168.0.207:27017}
       database: mtx_credit
   profiles:
-    active: ft
+    active: dev
   cloud:
     discovery:
       enabled: false
@@ -21,3 +21,8 @@ security:
 management:
   security:
     enable: false
+
+archisoft:
+  rabbitmq:
+    notificationExchange: archi.notification
+    notificationKey: archi.notificationKey

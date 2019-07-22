@@ -1,0 +1,76 @@
+server:
+  port: 8602
+
+spring:
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: agc_uaa
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+security:
+  ignored=/**
+
+management:
+  security:
+    enable: false
+
+service:
+  emailservice:
+    serviceId:  emailService
+    emailApiPath: /api/email #ok
+    gmailApiPath: /api/gmail
+  userService:
+    serviceId:  userservice
+    getUsersPath: /api/users/
+    getUsersByLoginPath: /api/users?login={loginId} #ok
+    getCompanyByUserIdAndCompanyId:  /api/company/{companyId}/users/{userId} #ok
+    getUserGroupById:  /api/usergroups/{groupId}
+    getForgotPasswordActivationPath:  /user/password?email={emailAddress}
+    getUsersByEmailPath: /api/users?email={emailAddress} #ok
+    updateUserPath: /api/users #ok
+    getUsersByActivationCodePath: /api/users?activationCode={activationCode} #ok
+    updateUserLoginTime:  /api/users/{userId}
+    setDefaultCompany:  /api//users/{userId}/company
+    addUserCompany: /api/company
+    deleteUserCompany: /api/company/{companyId}
+    getusergroupById: /api/usergroups/{id}
+    addUsergroup: /api/usergroups
+    updateUserImage: /api/users/{userId}/image
+    getUsersById: /api/users/{userId}
+    editUsergroup: /api/usergroups/{groupId}
+    editUserInfo: /api/users/{userId}/info
+    deleteUserFromCompany: /api/users/{userId}?companyId={companyId}
+    updateLoginAttempt: /api/users/attempt?login={login}&atm={atm}
+  organizationService:
+    serviceId:  organizationservice
+    getOrganizationModule: /api/mtx/organizations/{orgId}/menu
+    organizationPath: /api/mtx/organizations/{orgId}
+  activityService:
+    serviceId:  userActivityService
+    addActivityPath:  /api/mtx/activities
+    addUserActivityPath:  /api/mtx/useractivities
+  activationkey:
+    validInSecond: 300
+    activateUserLinkValidityPeriod: 259200
+
+archisoft:
+  jwtToken:
+    secretKey:  my-secret-token-to-change-in-production
+    adminTokenValidityInMilliseconds: 3600000
+    userTokenValidityInMilliseconds:  1800000
+    temporaryTokenValidityInMilliseconds: 60000
+    refreshTokenValidityInMilliseconds: 3600000
+    header: Authorization
+  constant:
+    forgotPasswordActivationLink: http://192.168.0.207:3000/#/change-password?key=
+  user:
+    userStatusBeforeActivate:  P
+    mtxLoginAttempt: 3

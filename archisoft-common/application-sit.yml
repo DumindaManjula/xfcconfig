@@ -9,17 +9,17 @@ spring:
     sampler:
       percentage: 1.0
   rabbitmq:
-    host: localhost
+    host: 192.168.0.170
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: password
 
 eureka:
   instance:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.21:8761/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.170:8761/eureka/}
 
 archisoft:
   configuration:
@@ -28,9 +28,9 @@ archisoft:
     ftpUser:  ftpuser
     ftpPassword:  ftpuser
   constant:
-    passwordActivationLink: http://192.168.0.209:3000/activate/buyer?key=
-    userActivationLink: http://192.168.0.209:3000/#/user-activation?key=
-    adminActivationLink: http://192.168.0.209:4000/#/user-activation?key=
+    passwordActivationLink: http://192.168.0.207:3000/activate/buyer?key=
+    userActivationLink: http://192.168.0.207:3000/#/user-activation?key=
+    adminActivationLink: http://192.168.0.207:4000/#/user-activation?key=
   user:
     adminCompanyId: MY00000A
   email:

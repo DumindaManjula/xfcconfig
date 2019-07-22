@@ -40,5 +40,5 @@ service:
 
 archisoft:
   rabbitmq:
-    notificationExchange: archi.notification
-    notificationKey: archi.notificationKey
+    notificationExchange: archi.testnotification
+    notificationKey: archi.testnotificationKey
