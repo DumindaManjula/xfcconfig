@@ -5,7 +5,7 @@
     </Properties>
     <Appenders>
         <Kafka name="Kafka" topic="mtx-log-file">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : ${bundle:project:name} [%thread] %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : ${sys:project.name} [%thread] %logger{36} - %msg%n"/>
             <Property name="bootstrap.servers">192.168.0.207:9092</Property>
         </Kafka>
         <Async name="Async">
@@ -13,7 +13,7 @@
         </Async>
 
         <Console name="stdout" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : ${bundle:project:name} [%thread] %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : ${sys:project.name} [%thread] %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
 
