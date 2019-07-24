@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="all" name="spring-boot-kafka-log" >
+<Configuration status="info" name="spring-boot-kafka-log" >
     <Properties>
         <Property name="application.name">@project.name@</Property>
     </Properties>
     <Appenders>
         <Kafka name="Kafka" topic="mtx-log-file">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : @project.name@ [%thread] %logger{36} - %msg%n"/>
+            <JsonLayout properties="true" compact="true" eventEol="true">
+                <KeyValuePair key="containerId" value="\${docker:containerId}"/>
+                <KeyValuePair key="containerName" value="\${docker:containerName}"/>
+                <KeyValuePair key="imageName" value="\${docker:imageName}"/>
+            </JsonLayout>
             <Property name="bootstrap.servers">192.168.0.207:9092</Property>
         </Kafka>
         <Async name="Async">
@@ -18,10 +22,10 @@
     </Appenders>
 
     <Loggers>
-        <Root level="INFO">
+        <Root level="info">
             <AppenderRef ref="Kafka"/>
             <AppenderRef ref="stdout"/>
         </Root>
-        <Logger name="org.apache.kafka" level="all" />
+        <Logger name="org.apache.kafka" level="info" />
     </Loggers>
 </Configuration>
