@@ -14,22 +14,7 @@ spring:
     service-registry:
       auto-registration:
         enabled: true
-  kafka:
-    bootstrap-servers: 192.168.0.207:9092
-    topic: mtx-log-file
-    serviceName: userService
 
----
-spring:
-  profiles: ft
-logging:
-  pattern:
-    console: "%d %-5level %logger : %msg%n"
-    file: "%d %-5level [%thread] %logger : %msg%n"
-  level:
-    org.springframework.web: INFO
-    guru.springframework.controllers: INFO
-    org.hibernate: INFO
 
 security:
   ignored=/**
