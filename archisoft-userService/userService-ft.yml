@@ -14,7 +14,20 @@ spring:
     service-registry:
       auto-registration:
         enabled: true
+  kafka:
+    bootstrap-servers: 192.168.0.207:9092
+    topic: mtx-log-file
+    serviceName: userService
 
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd  HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId}  spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : userservice  [%thread] %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd  HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId}  spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : userservice  [%thread] %logger{36} - %msg%n"
+  level:
+    org.springframework.web: INFO
+    guru.springframework.controllers: INFO
+    org.hibernate: INFO
+    org.apache.kafka: INFO
 
 security:
   ignored=/**
