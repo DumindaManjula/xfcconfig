@@ -43,6 +43,9 @@ archisoft:
     failexchange: archi.fail
     failroutingkey: archi.failroutingkey
     queue: archisoft-email
+    activityExchange: archi.activity
+    activityRoutingKey: archi.activityKey
+    activityQueue: archi-activity
 
 service:
   commonService:
