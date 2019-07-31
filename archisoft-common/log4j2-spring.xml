@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="info" name="spring-boot-kafka-log" >
+    <Properties>
+        <Property name="application.name">@project.name@</Property>
+    </Properties>
     <Appenders>
         <Kafka name="Kafka" topic="mtx-log-file">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : @application.name@ [%thread] %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : ${docker:containerName} [%thread] %logger{36} - %msg%n"/>
             <Property name="bootstrap.servers">192.168.0.207:9092</Property>
         </Kafka>
         <Async name="Async">
@@ -10,15 +13,15 @@
         </Async>
 
         <Console name="stdout" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : @application.name@ [%thread] %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [traceID : %X{X-B3-TraceId} spanID: %X{X-B3-SpanId} parent: %X{X-B3-ParentSpanId:-}] service : ${docker:containerName} [%thread] %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
 
     <Loggers>
-        <Root level="INFO">
+        <Root level="info">
             <AppenderRef ref="Kafka"/>
             <AppenderRef ref="stdout"/>
         </Root>
-        <Logger name="org.apache.kafka" level="INFO" />
+        <Logger name="org.apache.kafka" level="info" />
     </Loggers>
 </Configuration>

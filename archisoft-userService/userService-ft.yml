@@ -15,6 +15,7 @@ spring:
       auto-registration:
         enabled: true
 
+
 security:
   ignored=/**
 
