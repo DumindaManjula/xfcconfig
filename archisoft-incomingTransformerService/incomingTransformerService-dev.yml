@@ -33,6 +33,6 @@ archisoft:
   configuration:
     trans:
       xsltPrefix: _xml2xml.xsl
-      xsltPath: /home/vagrant/mtx/xslts/
-      outputPath: /home/vagrant/mtx/output/
+      xsltPath: /home/tharanga/mtx/xslts/
+      outputPath: /home/tharanga/mtx/output/
       outputFileIdentifier: mtx_
