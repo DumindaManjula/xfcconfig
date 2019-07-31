@@ -35,9 +35,3 @@ archisoft:
     forgotPasswordActivationLink: http://localhost:8080/#/change-password?key=
 
 
-archi:
-  logs:
-    kafka:
-      bootstrapAddress: 192.168.0.207:9092
-      topic: mtx-log-file
-      serviceName: userService2
