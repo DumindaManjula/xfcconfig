@@ -2,10 +2,6 @@ server:
   port: 8654
 
 spring:
-#  data:
-#    mongodb:
-#      uri: ${DB_URL:mongodb://192.168.0.207:27017}
-#      database: agc_mail
   profiles:
     active: ft
   cloud:
@@ -14,17 +10,15 @@ spring:
     service-registry:
       auto-registration:
         enabled: true
-#  mail:
-#    host: mail.archisoftglobal.com
-#    port: 587
-#    username: mtxsystem@archisoftglobal.com
-#    password: mtxEmailP@ssw0rd
-#    properties:
-#      mail:
-#        smtp:
-#          auth: true
-#          starttls:
-#            enable: false
+  rabbitmq:
+    host: 192.168.0.207
+    port: 5672
+    username: guest
+    password: guest
+  data:
+    mongodb:
+      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      database: mtx_invoice
 
 management:
   security:
@@ -36,3 +30,9 @@ archisoft:
     systemEmail:  mtxsystem@archisoftglobal.com
   rabbitmq:
     queue: document
+  configuration:
+    trans:
+      xsltPrefix: _xml2xml.xsl
+      xsltPath: /home/vagrant/mtx/xslts/
+      outputPath: /home/vagrant/mtx/output/
+      outputFileIdentifier: mtx_
