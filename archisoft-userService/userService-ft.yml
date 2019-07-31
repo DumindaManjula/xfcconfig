@@ -40,4 +40,4 @@ archi:
     kafka:
       bootstrapAddress: 192.168.0.207:9092
       topic: mtx-log-file
-      serviceName: userService
+      serviceName: userService2
