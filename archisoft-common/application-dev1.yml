@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: ft
+    active: dev
   zipkin:
     sender:
       type: web
