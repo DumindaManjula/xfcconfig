@@ -35,7 +35,7 @@ service:
     addTaxPath: /api/mtx/organizations/{orgId}/tax
     editTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
     addShipPath: /api/mtx/organizations/{orgId}/shipfrom
-    editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shipingId}
+    editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
     addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
     addContactPath: /api/mtx/organizations/{orgId}/contacts
     editContactPath: /api/mtx/organizations/{orgId}/contacts/{contactId}
