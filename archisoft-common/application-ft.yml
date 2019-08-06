@@ -19,7 +19,7 @@ eureka:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.21:8761/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.65:8761/eureka/}
 
 archisoft:
   configuration:
