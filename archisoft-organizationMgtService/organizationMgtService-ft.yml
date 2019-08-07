@@ -33,6 +33,7 @@ service:
     bankPath: /api/mtx/organizations/{orgId}/banks/{bankId}
     addCurrencyPath: /api/mtx/organizations/{orgId}/currencies
     addTaxPath: /api/mtx/organizations/{orgId}/tax
+    addPreferencePath: /api/mtx/organizations/{orgId}/preference
     editTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
     addShipPath: /api/mtx/organizations/{orgId}/shipfrom
     editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
