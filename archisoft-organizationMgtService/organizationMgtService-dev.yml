@@ -48,6 +48,7 @@ service:
     deleteCurrencyPath: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
     editCurrencyStatus: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
     editRemittance: /api/mtx/organizations/{orgId}/remittance/{remittanceId}
+    checkEmailValidityPath: /api/users/company?companyId={companyId}&emailAddress={emailAddress}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
