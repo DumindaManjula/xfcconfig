@@ -38,8 +38,10 @@ archisoft:
   kafka:
     server: 192.168.0.207:9092
   rabbitmq:
-    exchange: archi.direct
-    routingkey: archi.routingkey
+    exchange: archi.direct #remove
+    routingkey: archi.routingkey #remove
+    emailExchange: archi.direct
+    emailRoutingKey: archi.routingkey
     failexchange: archi.fail
     failroutingkey: archi.failroutingkey
     queue: archisoft-email
