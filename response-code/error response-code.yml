@@ -1,0 +1,58 @@
+E00001: userAccess.getUserByLogin(changePasswordRequestDTO.getUserName()) - Fail
+E00002: user not find by login name - Fail
+E00003: User not activated.
+E00004: User status not allow for activate user.
+E00005: User update issue.
+E00006: Password mismatch.
+E00007: Get user by activation code service fail.
+E00008: Cannot find user for the activation code.
+E00009: UserCompany creation issue.
+E00010: Cannot send emails
+E00011: Add user issue
+E00012: Add user issue - ServiceCallException
+E00013: Add user issue - Exception
+E00014: Get Organization detail by Id un-successful
+E00015: Cannot find the organization by given orgId
+E00016: Organization current status not allow for approve/reject
+E00017: Cannot find the organization contact details
+E00018: User group creation unsuccessful.
+E00019: User creation un-successful
+E00020: User creation un-successful
+E00021: Organization status change unsuccessful
+E00022: Organization status change unsuccessful
+E00023: Organization status change unsuccessful - reject status
+E00024: Get user company by userid, companyid issue
+E00025: Get all menu for company/admin fail, incorrect id
+E00026: Cannot find menu for this company. invalid companyID
+E00027: Get module by type method internal exception
+E00028: Cannot create user group. userManagement-addUserGroup
+E00029: Module creation unsuccessful
+E00030: Cannot find modules. - OrganizationManagementServiceImpl
+E00031: This company already used this invoice id.
+E00032: Invoice creation issue in InvoiceServiceImpl.createNewInvoice
+E00033: Module getting issue/or null. OrganizationManagement->OrganizationModuleManagementServiceImpl
+E00034: Get selected optional menu. OrganizationManagement->OrganizationModuleManagementServiceImpl
+E00035: Common support service execution issue for get modules by type.
+E00036: Module update issue in OrganizationManger -> addModules
+E00037: Module update service call issue OrganizationManger -> addModules
+E00038: Issue in get organization detail by business registration number
+E00039: networkManaget->netowrkService->InviteNewSupplier get org details issue
+E00040: networkManaget->netowrkService->InviteNewSupplier Supplier organization already registered
+E00041: networkManager->cannot send email
+E00042: InvoiceId cannot find by ID
+E00043: Invoice->InvoiceServiceImpl->AddItem issue. check the exception
+E00044: InvoiceManager->Change header info - Cannot find the invoice
+E00045: InvoiceManager->Change header info - Cannot change this invoice - different statusCode
+E00046: InvoiceManager->Change header info - Invoice header info update issue
+E00038: NetworkManager -> create network issue (NetworkServiceImpl)
+E00039: NetworkManager Service execution issue.
+E00049: Invalid PO when get by ID
+E00050: Exception happen in addItem to PO
+E00051: PurchangeOrderManager->Change header info - Cannot find the PO
+E00052: PurchangeOrderManager->Change header info - Cannot change this PO - different statusCode
+E00053: PurchangeOrderManager->Change header info - PO header info update issue
+E00054: UserNotificationSetting creation issue
+E00055: UserNotificationSetting edit issue
+E00056: Set default company issue
+E00057: Reset activation key issue
+E00058: Service execution issue - change status

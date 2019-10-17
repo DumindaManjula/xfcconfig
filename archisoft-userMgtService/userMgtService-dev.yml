@@ -2,10 +2,6 @@ server:
   port: 8602
 
 spring:
-#  data:
-#    mongodb:
-#      uri: ${DB_URL:mongodb://192.168.0.207:27017}
-#      database: agc_uaa
   profiles:
     active: dev
   cloud:
@@ -70,7 +66,7 @@ archisoft:
     refreshTokenValidityInMilliseconds: 3600000
     header: Authorization
   constant:
-    forgotPasswordActivationLink: http://192.168.0.207:3000/#/change-password?key=
+    forgotPasswordActivationLink: http://192.168.0.211:3000/#/change-password?key=
   user:
     userStatusBeforeActivate:  P
     mtxLoginAttempt: 3

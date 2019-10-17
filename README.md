@@ -1,1 +1,1 @@
-You can find the all configuration files related to the ManageTradeX.
+You can find the all configuration files related to the XForce.
