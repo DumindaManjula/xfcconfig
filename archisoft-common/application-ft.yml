@@ -4,44 +4,42 @@ spring:
   zipkin:
     sender:
       type: web
-    baseUrl:  http://192.168.0.209:9411
+    baseUrl:  http://192.168.0.212:9411
   sleuth:
     sampler:
       percentage: 1.0
   rabbitmq:
-    host: 192.168.0.209
+    host: 192.168.0.212
     port: 5672
-    username: guest
-    password: guest
+    username: app_mq
+    password: xpp_mq
 
 eureka:
   instance:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.209:8761/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.212:8761/eureka/}
 
 archisoft:
   configuration:
-    ftpHost:  192.168.0.207
+    ftpHost:  192.168.0.212
     ftpPort:  22
     ftpUser:  ftpuser
     ftpPassword:  ftpuser
   constant:
-    passwordActivationLink: http://192.168.0.209:3000/activate/buyer?key=
-    userActivationLink: http://192.168.0.209:3000/#/user-activation?key=
-    adminActivationLink: http://192.168.0.209:4000/#/user-activation?key=
+    passwordActivationLink: http://192.168.0.212:3000/activate/buyer?key=
+    userActivationLink: http://192.168.0.212:3000/#/user-activation?key=
+    adminActivationLink: http://192.168.0.212:4000/#/user-activation?key=
   user:
     adminCompanyId: MY00000A
   email:
     emailTopic: email-topic
   kafka:
-    server: 192.168.0.207:9092
+    server: 192.168.0.212:9092
   rabbitmq:
-    exchange: archi.direct #remove
-    routingkey: archi.routingkey #remove
-    emailExchange: archi.direct
-    emailRoutingKey: archi.routingkey
+    exchange: archi.direct
+    routingkey: archi.routingkey
     failexchange: archi.fail
     failroutingkey: archi.failroutingkey
     queue: archisoft-email
