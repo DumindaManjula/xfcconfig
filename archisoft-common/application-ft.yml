@@ -29,8 +29,8 @@ archisoft:
     ftpPassword:  ftpuser
   constant:
     passwordActivationLink: http://192.168.0.212:3000/activate/buyer?key=
-    userActivationLink: http://192.168.0.212:3000/#/user-activation?key=
-    adminActivationLink: http://192.168.0.212:4000/#/user-activation?key=
+    userActivationLink: http://192.168.0.212:3000/user-activation?key=
+    adminActivationLink: http://192.168.0.212:4000/user-activation?key=
   user:
     adminCompanyId: MY00000A
   email:
