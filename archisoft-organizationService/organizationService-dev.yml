@@ -18,3 +18,5 @@ spring:
 management:
   security:
     enable: false
+
+DEPT_CODE: 9000
