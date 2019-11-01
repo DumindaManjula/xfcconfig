@@ -70,3 +70,12 @@ archisoft:
   user:
     userStatusBeforeActivate:  P
     mtxLoginAttempt: 3
+
+
+  password:
+    policy:
+      numOfDigits: 1
+      minLength: 8
+      maxLength: 15
+      numOfUppercaseLetters: 1
+      numOfLowercaseLetters: 1
