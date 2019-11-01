@@ -18,3 +18,7 @@ spring:
 management:
   security:
     enable: false
+
+archisoft:
+  organization:
+    departmentcode: 9000
