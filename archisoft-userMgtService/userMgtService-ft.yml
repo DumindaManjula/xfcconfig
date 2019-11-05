@@ -54,7 +54,7 @@ service:
     addActivityPath:  /api/mtx/activities
     addUserActivityPath:  /api/mtx/useractivities
   activationkey:
-    validInSecond: 300
+    validInSecond: 3600
     activateUserLinkValidityPeriod: 259200
 
 archisoft:
