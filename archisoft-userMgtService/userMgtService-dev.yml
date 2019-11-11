@@ -62,10 +62,10 @@ archisoft:
     secretKey:  my-secret-token-to-change-in-production
     adminTokenValidityInMilliseconds: 3600000
     userTokenValidityInMilliseconds:  1800000
-    userTokenValidityInMillisecondsMob: 300000
+    userTokenValidityInMillisecondsMob: 1800000
     temporaryTokenValidityInMilliseconds: 60000
     refreshTokenValidityInMilliseconds: 3600000
-    refreshTokenValidityInMillisecondsMob: 600000
+    refreshTokenValidityInMillisecondsMob: 3600000
     header: Authorization
   constant:
     forgotPasswordActivationLink: http://192.168.0.211:3000/change-password?key=
