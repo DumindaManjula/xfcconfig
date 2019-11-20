@@ -61,10 +61,10 @@ archisoft:
   jwtToken:
     secretKey:  my-secret-token-to-change-in-production
     adminTokenValidityInMilliseconds: 3600000
-    userTokenValidityInMilliseconds:  120000
+    userTokenValidityInMilliseconds:  1800000
     userTokenValidityInMillisecondsMob: 1800000
     temporaryTokenValidityInMilliseconds: 60000
-    refreshTokenValidityInMilliseconds: 300000
+    refreshTokenValidityInMilliseconds: 3600000
     refreshTokenValidityInMillisecondsMob: 3600000
     header: Authorization
   constant:
@@ -72,7 +72,6 @@ archisoft:
   user:
     userStatusBeforeActivate:  P
     mtxLoginAttempt: 3
-
 
   password:
     policy:
