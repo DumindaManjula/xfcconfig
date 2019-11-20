@@ -35,4 +35,4 @@ archisoft:
 mtx:
   services:
     nonsecure:
-      (/usermgtservice/user/+(authenticate|password|resetpwd|activate|logout))|(/supportservice/api/+(countries|biznature|uoms))|(/organizationmgtservice/api/organizations/self)|(/supportservice/api/countries/+[A-Z]{2,3}+/states)
+      (/userservice/api/user/linkvalidity)|(/usermgtservice/user/+(authenticate|password|resetpwd|activate|logout))|(/supportservice/api/+(countries|biznature|uoms))|(/organizationmgtservice/api/organizations/self)|(/supportservice/api/countries/+[A-Z]{2,3}+/states)
