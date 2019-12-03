@@ -23,9 +23,10 @@ archisoft:
   organization:
     departmentcode: 9000
 
-password:
-  policy:
-    minLength: 8
-    regex: ^[a-zA-Z0-9,.!? ]*$
+  password:
+    policy:
+      minLength: 8
+      regex: ^[a-zA-Z0-9,.!? ]*$
+
 
 
