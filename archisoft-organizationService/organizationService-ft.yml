@@ -22,6 +22,7 @@ management:
 archisoft:
   organization:
     departmentcode: 9000
+
   password:
     policy:
       minLength: 8

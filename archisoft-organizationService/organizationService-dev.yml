@@ -23,10 +23,11 @@ archisoft:
   organization:
     departmentcode: 9000
 
-  password:
+  username:
     policy:
       minLength: 8
-      regex: ^[a-zA-Z0-9,.!? ]*$
+      maxLength: 30
+      regex: ^[a-zA-Z0-9,.@ ]*$
 
 
 
