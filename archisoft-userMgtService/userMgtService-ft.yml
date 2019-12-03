@@ -68,8 +68,8 @@ archisoft:
     refreshTokenValidityInMillisecondsMob: 7200000
     header: Authorization
   constant:
-    forgotPasswordActivationLink: http://192.168.0.212:3000/change-password?key=
-#    forgotPasswordActivationLink: http://202.168.72.43:3000/change-password?key=
+#    forgotPasswordActivationLink: http://192.168.0.212:3000/change-password?key=
+   forgotPasswordActivationLink: http://202.168.72.43:3000/change-password?key=
   user:
     userStatusBeforeActivate:  P
     mtxLoginAttempt: 3
