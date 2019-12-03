@@ -25,5 +25,6 @@ archisoft:
   password:
     policy:
       minLength: 8
+      maxLength: 30
       regex: ^[a-zA-Z0-9,.!? ]*$
 
