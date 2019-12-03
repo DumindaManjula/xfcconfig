@@ -2,10 +2,6 @@ server:
   port: 8602
 
 spring:
-  data:
-    mongodb:
-      uri: ${DB_URL:mongodb://192.168.0.207:27017}
-      database: agc_uaa
   profiles:
     active: ft
   cloud:
@@ -25,18 +21,18 @@ management:
 service:
   emailservice:
     serviceId:  emailService
-    emailApiPath: /api/email #ok
+    emailApiPath: /api/email
     gmailApiPath: /api/gmail
   userService:
     serviceId:  userservice
     getUsersPath: /api/users/
-    getUsersByLoginPath: /api/users?login={loginId} #ok
-    getCompanyByUserIdAndCompanyId:  /api/company/{companyId}/users/{userId} #ok
+    getUsersByLoginPath: /api/users?login={loginId}
+    getCompanyByUserIdAndCompanyId:  /api/company/{companyId}/users/{userId}
     getUserGroupById:  /api/usergroups/{groupId}
     getForgotPasswordActivationPath:  /user/password?email={emailAddress}
-    getUsersByEmailPath: /api/users?email={emailAddress} #ok
-    updateUserPath: /api/users #ok
-    getUsersByActivationCodePath: /api/users?activationCode={activationCode} #ok
+    getUsersByEmailPath: /api/users?email={emailAddress}
+    updateUserPath: /api/users
+    getUsersByActivationCodePath: /api/users?activationCode={activationCode}
     updateUserLoginTime:  /api/users/{userId}
     setDefaultCompany:  /api//users/{userId}/company
     addUserCompany: /api/company
@@ -58,7 +54,7 @@ service:
     addActivityPath:  /api/mtx/activities
     addUserActivityPath:  /api/mtx/useractivities
   activationkey:
-    validInSecond: 300
+    validInSecond: 3600
     activateUserLinkValidityPeriod: 259200
 
 archisoft:
@@ -66,11 +62,21 @@ archisoft:
     secretKey:  my-secret-token-to-change-in-production
     adminTokenValidityInMilliseconds: 3600000
     userTokenValidityInMilliseconds:  1800000
-    temporaryTokenValidityInMilliseconds: 600000
+    userTokenValidityInMillisecondsMob: 3600000
+    temporaryTokenValidityInMilliseconds: 60000
     refreshTokenValidityInMilliseconds: 3600000
+    refreshTokenValidityInMillisecondsMob: 7200000
     header: Authorization
   constant:
-    forgotPasswordActivationLink: http://192.168.0.207:8080/#/change-password?key=
+#    forgotPasswordActivationLink: http://192.168.0.212:3000/change-password?key=
+   forgotPasswordActivationLink: http://202.168.72.43:3000/change-password?key=
   user:
     userStatusBeforeActivate:  P
     mtxLoginAttempt: 3
+
+  password:
+    policy:
+      numOfDigits: 1
+      minLength: 8
+      maxLength: 15
+      numOfLowercaseLetters: 1

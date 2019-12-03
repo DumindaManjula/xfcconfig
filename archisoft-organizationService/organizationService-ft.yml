@@ -6,8 +6,8 @@ spring:
     active: ft
   data:
     mongodb:
-      uri: ${DB_URL:mongodb://192.168.0.207:27017}
-      database: mtx_org
+      uri: ${DB_URL:mongodb://app_user:xpp_user@192.168.0.212:27017}
+      database: agc_org
   cloud:
     discovery:
       enabled: false
@@ -18,3 +18,7 @@ spring:
 management:
   security:
     enable: false
+
+archisoft:
+  organization:
+    departmentcode: 9000

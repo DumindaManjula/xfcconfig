@@ -35,6 +35,7 @@ service:
     addTaxPath: /api/mtx/organizations/{orgId}/tax
     editTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
     addShipPath: /api/mtx/organizations/{orgId}/shipfrom
+    addPreferencePath: /api/mtx/organizations/{orgId}/preference
     editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
     addInvoicePath: /api/mtx/organizations/{orgId}/invoicerules
     addContactPath: /api/mtx/organizations/{orgId}/contacts
@@ -47,6 +48,7 @@ service:
     deleteCurrencyPath: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
     editCurrencyStatus: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
     editRemittance: /api/mtx/organizations/{orgId}/remittance/{remittanceId}
+    checkEmailValidityPath: /api/users/company?companyId={companyId}&emailAddress={emailAddress}
   activityService:
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
@@ -57,6 +59,7 @@ service:
     deleteUserCompany:  /api/users/{userId}?companyId={companyId}
     getUserGroupPath: /api/usergroups?companyId={companyId}&groupName={groupName}
     updateUserCompanyNamePath: /api/companies/{companyId}?companyName={companyName}
+    checkEmailValidityPath: /api/users/company?companyId={companyId}&emailAddress={emailAddress}
   userMgtService:
     serviceId:  usermgtservice
     createUserPath:  /api/users
@@ -74,3 +77,4 @@ archisoft:
   email:
     subject:
       rejectCompany: Company registration fail
+

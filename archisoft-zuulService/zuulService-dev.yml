@@ -2,10 +2,6 @@ server:
   port: 9090
 
 spring:
-  data:
-    mongodb:
-      uri: ${DB_URL:mongodb://192.168.0.207:27017}
-      database: agc_uaa
   profiles:
     active: dev
 
@@ -32,7 +28,11 @@ hystrix:
 zuul:
   sensitive-headers: Cookie,Set-Cookie
 
+archisoft:
+  jwtToken:
+    secretKey:  my-secret-token-to-change-in-production
+
 mtx:
   services:
     nonsecure:
-      (/usermgtservice/user/+(authenticate|password|resetpwd|activate|logout))|(/supportservice/api/+(countries|biznature|uoms))|(/organizationmgtservice/api/organizations/self)|(/supportservice/api/countries/+[A-Z]{2,3}+/states)
+      (/userservice/api/user/linkvalidity)|(/usermgtservice/user/+(authenticate|password|resetpwd|activate|logout))|(/supportservice/api/+(countries|biznature|uoms))|(/organizationmgtservice/api/organizations/self)|(/supportservice/api/countries/+[A-Z]{2,3}+/states)

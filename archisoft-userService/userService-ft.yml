@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: ${DB_URL:mongodb://192.168.0.207:27017}
+      uri: ${DB_URL:mongodb://app_user:xpp_user@192.168.0.212:27017}
       database: agc_uaa
   profiles:
     active: ft

@@ -1,13 +1,13 @@
 server:
-  port: 8605
+  port: 8686
 
 spring:
   profiles:
-    active: dev
+    active: ft
   data:
     mongodb:
-      uri: ${DB_URL:mongodb://192.168.0.207:27017}
-      database: agc_cdm
+      uri: ${DB_URL:mongodb://app_user:xpp_user@192.168.0.212:27017}
+      database: xfc_project
   cloud:
     discovery:
       enabled: false

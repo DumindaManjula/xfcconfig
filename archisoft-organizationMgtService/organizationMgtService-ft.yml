@@ -21,6 +21,7 @@ service:
     selfRegistrationPath: /api/mtx/organizations/self
     mtxRegistrationPath: /api/mtx/organizations/mtx
     editOrganizaitonInfoPath: /api/mtx/organizations/{orgId}/mtx2
+    addRemittanceAddress: /api/mtx/organizations/{orgId}/remittance
     deleteOrganizationPath: /api/mtx/organizations/{orgId}
     updateOrganizationDocumentPath: /api/mtx/organizations/{orgId}/documents
     organizationPath: /api/mtx/organizations/{orgId}
@@ -28,11 +29,11 @@ service:
     updateOrganizationImage: /api/mtx/organizations/{orgId}/image
     addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
     getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
-    addRemittanceAddress: /api/mtx/organizations/{orgId}/remittance
     addBankPath: /api/mtx/organizations/{orgId}/banks
     bankPath: /api/mtx/organizations/{orgId}/banks/{bankId}
     addCurrencyPath: /api/mtx/organizations/{orgId}/currencies
     addTaxPath: /api/mtx/organizations/{orgId}/tax
+    addPreferencePath: /api/mtx/organizations/{orgId}/preference
     editTaxPath: /api/mtx/organizations/{orgId}/tax/{taxId}
     addShipPath: /api/mtx/organizations/{orgId}/shipfrom
     editShipPath: /api/mtx/organizations/{orgId}/shipfrom/{shippingId}
@@ -48,9 +49,6 @@ service:
     editCurrencyStatus: /api/mtx/organizations/{orgId}/currencies/{currencyCode}
     editRemittance: /api/mtx/organizations/{orgId}/remittance/{remittanceId}
   activityService:
-    updateOrganizationImage: /api/mtx/organizations/{orgId}/image
-    addModuleToCompanyPath: /api/mtx/organizations/{orgId}/menu
-    getModuleByTypePath: /api/mtx/organizations/{orgId}/menu?type={type}
     serviceId:  userActivityService
     addActivityPath:  /api/mtx/useractivities
   userService:
@@ -59,7 +57,7 @@ service:
     userGroupPath:  /api/usergroups/{groupId}
     deleteUserCompany:  /api/users/{userId}?companyId={companyId}
     getUserGroupPath: /api/usergroups?companyId={companyId}&groupName={groupName}
-    updateUserCompanyNamePath: /api/companies/{companyId}?companyName={companyName}
+    updateUserCompanyNamePath: /api/companies/{companyId}?companyName={companyName
     checkEmailValidityPath: /api/users/company?companyId={companyId}&emailAddress={emailAddress}
   userMgtService:
     serviceId:  usermgtservice
