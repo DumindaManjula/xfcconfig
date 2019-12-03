@@ -23,7 +23,7 @@ archisoft:
   organization:
     departmentcode: 9000
 
-  password:
+  username:
     policy:
       minLength: 8
       maxLength: 30
