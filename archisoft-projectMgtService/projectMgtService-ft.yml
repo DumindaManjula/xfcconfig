@@ -14,3 +14,10 @@ spring:
 management:
   security:
     enable: false
+
+archisoft:
+  organization:
+    beforeApproveRejectStatus: WA
+  email:
+    subject:
+      rejectCompany: Company registration fail
