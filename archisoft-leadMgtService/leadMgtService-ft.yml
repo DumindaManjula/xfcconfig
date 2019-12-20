@@ -1,9 +1,9 @@
 server:
-  port: 8688
+  port: 8689
 
 spring:
   profiles:
-    active: dev
+    active: ft
   cloud:
     discovery:
       enabled: false
@@ -14,6 +14,3 @@ spring:
 management:
   security:
     enable: false
-
-
-
