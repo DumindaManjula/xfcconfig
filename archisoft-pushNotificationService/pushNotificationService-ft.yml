@@ -1,0 +1,15 @@
+server:
+  port: 8770
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: false
+      service-registry:
+        auto-registration:
+          enabled: true
+
+app:
+  firebase-configuration-file: xforce-a5f08-firebase-adminsdk-k8t3q-cc8ef094bb.json
