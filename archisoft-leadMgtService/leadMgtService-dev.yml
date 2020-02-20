@@ -15,3 +15,6 @@ management:
   security:
     enable: false
 
+archisoft:
+  dates:
+    duplicatedateperiod: 14

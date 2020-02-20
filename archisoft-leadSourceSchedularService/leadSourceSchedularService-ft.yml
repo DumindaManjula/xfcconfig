@@ -14,3 +14,8 @@ spring:
 management:
   security:
     enable: false
+
+archisoft:
+  scheduler:
+    retriveLeadData:
+      cron-expression: 0 0/1 * * * ?
