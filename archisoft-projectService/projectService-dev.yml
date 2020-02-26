@@ -6,7 +6,7 @@ spring:
     active: dev
   data:
     mongodb:
-      uri: ${DB_URL:mongodb://app_user:xpp_user@192.168.0.212:27017}
+      uri: ${DB_URL:mongodb://app_user:xpp_user@192.168.0.211:27017}
       database: xfc_lead
   cloud:
     discovery:
@@ -14,7 +14,13 @@ spring:
     service-registry:
       auto-registration:
         enabled: true
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
 
 management:
   security:
     enable: false
+
+
