@@ -18,4 +18,6 @@ management:
 archisoft:
   scheduler:
     retriveLeadData:
-      cron-expression: 0 0/1 * * * ?
+      cron-expression: 0 0/15 * * * ?
+  dates:
+    duplicatedateperiod: 14

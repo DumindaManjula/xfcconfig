@@ -9,21 +9,22 @@ spring:
     sampler:
       percentage: 1.0
   rabbitmq:
-    host: 192.168.0.211
+    host: 192.168.0.212
     port: 5672
     username: app_mq
     password: xpp_mq
   servlet:
     multipart:
-      max-file-size: 2MB
-      max-request-size: 2MB
+      max-file-size: 50MB
+      max-request-size: 50MB
 
 eureka:
   instance:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@192.168.0.65:8761/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://admin:admin@52.14.219.73:8761/eureka/}
+
 
 archisoft:
   configuration:
